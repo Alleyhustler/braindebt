@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from sanji.neocities.org/lamento by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:01:55 GMT -->
+<head>
+  <meta charset="UTF-8" />
+  <title>Lamento ~Beyond the Void~</title>
+ 
+ <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&amp;display=swap" rel="stylesheet">
+ <link rel="shortcut icon" href="imageuploads/lamento/%e5%bb%bb%e3%82%8b%e3%82%a2%e3%82%a4%e3%82%b3%e3%83%b3.png">
+  
+<style>
+ body {
+  background-image: url(gifs%20and%20pngs/bg/bg03000%e3%82%ab%e3%82%ac%e3%83%9f%e6%b9%96c.jpg);
+  background-size: cover;
+  background-repeat:none;
+  font-size: 18px;
+  font-family: "Nanum Gothic Coding", monospace;
+  color:white;
+ }
+ 
+ .container {
+  background-image: url();
+  background-color: black;
+  background-size: cover;
+  background-repeat:none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6vh;
+  width: 800px;
+  height: 600px;
+  position:relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+ }
+
+.hscroll {
+ white-space: normal;
+ display: inline-block;
+ vertical-align: middle;
+}
+ 
+ /*standard style box*/
+ .game {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position:relative;
+  height: 600px; 
+  width: 800px;
+  
+ }
+ 
+ .portrait {
+  background-image: url(imageuploads/lamento/frame01b.png);
+  background-size: cover;
+  background-repeat:none;
+  width: 225px;
+  overflow: hidden;
+ }
+ .portrait img {
+  height:100%;
+ }
+ 
+ .text {
+  width: 350px;
+  padding: 0.6em;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+ 
+ .text > div {
+  background-image: url(imageuploads/lamento/box10.png);
+  background-size: cover;
+  background-repeat:none;
+  border-radius: 5px;
+  text-align:center;
+  padding: 0.5em;
+  min-height: 150px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+ }
+ 
+ .portrait2 {
+  background-image: url(imageuploads/lamento/frame03b.png);
+  background-size: cover;
+  background-repeat:none;
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  margin-top: 50px;
+  position:absolute;
+  right:0px;
+ }
+ .portrait2 img {
+  height: 100%;
+ }
+ 
+ .text2 {
+  background-image: url(imageuploads/lamento/box01.png);
+  background-size: cover;
+  background-repeat:none;
+  border-radius: 5px;
+  text-align:center;
+  padding: 1em;
+  height: 170px;
+  width: 460px;
+  margin-top: 30px;
+  position:absolute;
+  bottom: 60px;
+  right:40px;
+ }
+ 
+ /*overflow with hidden scrollbars*/
+ .scroll {
+  overflow:scroll;
+  overflow-x:hidden;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+ }
+ 
+ a { 
+  color:white;
+ }
+ a:hover {
+  letter-spacing: 1px;
+  font-style: italic;
+ }
+ 
+ /*backgrounds*/
+ #one {
+  background-image: url(gifs%20and%20pngs/bg/bg02900%e8%bf%b7%e3%81%84%e3%81%ae%e6%a3%ae_%e6%b1%8e%e7%94%a8c.jpg);
+  background-size: cover;
+  background-repeat:none;
+ }
+ #two {
+  background-image: url(gifs%20and%20pngs/bg/bg01000%e8%bf%b7%e3%81%84%e3%81%ae%e6%a3%aen.jpg);
+  background-size: cover;
+  background-repeat:none;
+ }
+ #three {
+  background-image: url(gifs%20and%20pngs/bg/bg00210%e4%b8%bb%e4%ba%ba%e5%85%ac%e5%ae%b6n.jpg);
+  background-size: cover;
+  background-repeat:none;
+ }
+ #four {
+  background-image: url(gifs%20and%20pngs/bg/bg12300%e8%97%8d%e9%96%83%e3%81%ae%e8%a1%97_%e5%9b%b3%e6%9b%b8%e9%a4%a8_%e9%80%9a%e8%b7%afn.jpg);
+  background-size: cover;
+  background-repeat:none;
+ }
+ #five {
+  background-image: url(gifs%20and%20pngs/bg/bg08110%e8%97%8d%e9%96%83%e3%81%ae%e8%a1%97_%e5%a8%bc%e9%a4%a8_%e9%83%a8%e5%b1%8b.jpg);
+  background-size: cover;
+  background-repeat:none;
+ }
+ #six {
+  background-image: url(imageuploads/lamento/ev_k_%e3%82%b3%e3%83%8e%e3%82%a8%e5%ba%97%e7%95%aa.jpg);
+  background-size: cover;
+  background-repeat:none;
+ }
+ /*format
+ # {
+  background-image: url();
+  background-size: cover;
+  background-repeat:none;
+ }
+ */
+ 
+ /*nav buttons*/
+ .backbutton {
+  width: 160px;
+  height:160px;
+  display:block;
+  background:transparent url('gifs%20and%20pngs/ezgif-2-ad76bc84e3.gif') left top no-repeat;
+ }
+ .backbutton:hover {
+  background-image: url('gifs%20and%20pngs/ezgif-5-df65216a5d.png');
+ }
+
+ .nextbutton {
+  width: 160px;
+  height:160px;
+  display:block;
+  background:transparent url('gifs%20and%20pngs/ezgif-2-9c688412d6.gif') right top no-repeat;
+ }
+ .nextbutton:hover {
+  background-image: url('gifs%20and%20pngs/ezgif-5-62c8969a11.png');
+ }
+ 
+ /*frames*/
+ .bottomframe { position:absolute; bottom:0px; z-index: 2; width:800px; left: 0; right: 0; margin-left: auto; margin-right: auto; }
+ .topframe { position: absolute; top: 0px; z-index: 2; width:800px; left: 0; right: 0; margin-left: auto; margin-right: auto; }
+ 
+ /*mini icons*/
+ .micon {
+  height: 15px;
+ }
+ 
+ .caption {
+  font-size: 12px;
+ }
+ 
+
+</style>
+</head>
+
+<body>
+
+ <!-- site container -->
+<div class="container">
+ <!-- first box -->
+ <div class="hscroll" id="one">
+  <div class="game">
+   <!-- nav buttons-->
+   <a href="index.html" class="backbutton" title="back" style="position:absolute; left:5px;bottom:0px; margin-bottom: -70px; z-index:3;"></a>
+   <a href="#two" class="nextbutton" title="next" style="position:absolute; right: 5px; bottom:0px; margin-bottom: -70px; z-index:3;"></a>
+   <!-- frame elements -->
+   <img src="gifs%20and%20pngs/frame00a.png" class="topframe">
+   <img src="gifs%20and%20pngs/frame00b.png" class="bottomframe">
+   <!-- portraits and text -->
+   <div class="portrait">
+    <img src="imageuploads/lamento/st%e3%82%b3%e3%83%8e%e3%82%a8%e5%91%aa%e3%81%84_%e6%ad%a3%e9%9d%a2_%e3%83%9e%e3%83%b3%e3%83%88_%e5%93%80.png" style="margin-left: -130px;">
+   </div>
+   <div class="text scroll">
+    <img src="imageuploads/lamento/menu_title.png" style="width:100%;">
+    <div>Welcome to my Lamento fanshrine !!<br><br>Use the buttons on the bottom to navigate between pages, as scrollbars have been hidden.<br><br>
+    I also have a side project fansite <a href="https://lamento.nekoweb.org/">here</a> with a different layout and collection of Lamento webgraphics. <img src="gifs%20and%20pngs/ezgif-2-9138e0fc9b.gif" class="micon"></div>
+   </div>
+   <div class="portrait">
+    <img src="imageuploads/lamento/st%e3%83%a9%e3%82%a4_%e6%ad%a3%e9%9d%a2_%e3%83%9e%e3%83%b3%e3%83%88_%e9%80%9a%e5%b8%b8.png" style="margin-left:-124px;">
+   </div>
+  </div>
+ </div><!-- end first box -->
+ 
+ <!-- second box -->
+ <div class="hscroll" id="two">
+  <div class="game">
+   <!-- nav buttons-->
+   <a href="#one" class="backbutton" title="back" style="position:absolute; left:5px;bottom:0px; margin-bottom: -70px; z-index:3;"></a>
+   <a href="#three" class="nextbutton" title="next" style="position:absolute; right: 5px; bottom:0px; margin-bottom: -70px; z-index:3;"></a>
+   <!-- frame elements -->
+   <img src="gifs%20and%20pngs/frame00a.png" class="topframe">
+   <img src="gifs%20and%20pngs/frame00b.png" class="bottomframe">
+   <!-- end nav buttons -->
+   <div class="portrait">
+    <img src="imageuploads/lamento/st%e3%82%a2%e3%82%b5%e3%83%88_%e6%ad%a3%e9%9d%a2_%e3%83%9e%e3%83%b3%e3%83%88_%e7%9d%a8%e3%81%bf.png" style="margin-left: -200px;">
+   </div>
+   <div class="text">
+    <div>I became absolutely enthralled with Lamento after finally getting my hands on a physical copy of the game. Lamento feels so special to me; from the beautiful 2000s-2010s era aesthetics surrounding it, to the enchanting verdant setting of the game and the beautiful soundtrack to accompany the story. It invokes a sense of deep nostalgia for the 2010s in me. Konoe's journey to make sense of his strange circumstance and his desire to keep going despite the uncertainty of the world around him is very compelling to me. My favorite characters were Konoe and Leaks, and I liked Rai the most out of the bachelors. <img src="gifs%20and%20pngs/ezgif-2-6570872c45.gif" class="micon"></div>
+   </div>
+   <div class="portrait">
+    <img src="imageuploads/lamento/st%e3%82%b3%e3%83%8e%e3%82%a8_%e6%ad%a3%e9%9d%a2_%e3%83%95%e3%83%bc%e3%83%89_%e5%93%80.png" style="margin-left: -129px;">
+   </div>
+  </div>
+ </div><!-- end second box -->
+ 
+ <!-- third box -->
+ <div class="hscroll" id="three">
+  <div class="game">
+   <!-- nav buttons-->
+   <a href="#two" class="backbutton" title="back" style="position:absolute; left:5px;bottom:0px; margin-bottom: -70px; z-index:3;"></a>
+   <a href="#four" class="nextbutton" title="next" style="position:absolute; right: 5px; bottom:0px; margin-bottom: -70px; z-index:3;"></a>
+   <!-- frame elements -->
+   <img src="gifs%20and%20pngs/frame00a.png" class="topframe">
+   <img src="gifs%20and%20pngs/frame00b.png" class="bottomframe">
+   <!-- end nav buttons -->
+   <div class="portrait">
+    <img src="imageuploads/lamento/st%e3%82%b7%e3%83%a5%e3%82%a4_%e6%ad%a3%e9%9d%a2_%e9%80%9a%e5%b8%b8.png" style="margin-left: -175px;">
+   </div>
+   <div class="portrait2">
+    <img src="imageuploads/lamento/kws%e3%83%aa%e3%83%bc%e3%82%af%e3%82%b9_%e6%ad%a3%e9%9d%a2_%e5%96%9c.png" style="margin-left: -30px;">
+   </div>
+   <div class="text2 scroll">
+    <div>Lamento Disc Collection<br><br>
+     <img src="gifs%20and%20pngs/lamentodisc-removebg-preview.png" style="width:130px;" class="scaling">
+     <img src="gifs%20and%20pngs/IMG_20240408_0001-removebg-preview.png" style="width:130px;" class="scaling">
+     <img src="gifs%20and%20pngs/lamentomusicdisc.png" style="width:130px;" class="scaling">
+     <img src="gifs%20and%20pngs/lamentomusicdisc2.png" style="width:130px;" class="scaling">
+     <img src="gifs%20and%20pngs/konoedramacd.png" style="width:130px;">
+    </div>
+   </div>
+  </div>
+ </div><!-- end third box -->
+ 
+ <!-- fourth box -->
+ <div class="hscroll" id="four">
+  <div class="game">
+   <!-- nav buttons-->
+   <a href="#three" class="backbutton" title="back" style="position:absolute; left:5px;bottom:0px; margin-bottom: -70px; z-index:3;"></a>
+   <a href="#five" class="nextbutton" title="next" style="position:absolute; right: 5px; bottom:0px; margin-bottom: -70px; z-index:3;"></a>
+   <!-- frame elements -->
+   <img src="gifs%20and%20pngs/frame00a.png" class="topframe">
+   <img src="gifs%20and%20pngs/frame00b.png" class="bottomframe">
+   <!-- end nav buttons -->
+   <div class="text" style="width: 550px;max-height:460px; margin-top: 40px;">
+   <div class="scroll">OST Collection<br><br>
+    <audio controls src="https://files.catbox.moe/g05glf.mp3"></audio><br>
+    <span class="caption">Lamento ~the world devoid of emotion~</span><br><br>
+    <audio controls src="https://files.catbox.moe/ke41ch.mp3"></audio><br>
+    <span class="caption">forest of hesitation</span><br><br>
+    <audio controls src="https://files.catbox.moe/hkwcb9.mp3"></audio><br>
+    <span class="caption">town of aisen</span><br><br>
+    <audio controls src="https://files.catbox.moe/k7a4dc.mp3"></audio><br>
+    <span class="caption">those unseen</span><br><br>
+    <audio controls src="https://files.catbox.moe/wk9dol.mp3"></audio><br>
+    <span class="caption">skies turning dark</span> <img src="gifs%20and%20pngs/smallicons/red%20shiny%20heart%20.gif"><br><br>
+    <audio controls src="https://files.catbox.moe/ze7lkr.mp3"></audio><br>
+    <span class="caption">temple of soul</span><br><br>
+    <audio controls src="https://files.catbox.moe/z432do.mp3"></audio><br>
+    <span class="caption">frozen memories</span> <img src="gifs%20and%20pngs/smallicons/red%20shiny%20heart%20.gif"><br><br>
+    <audio controls src="https://files.catbox.moe/b36xoe.mp3"></audio><br>
+    <span class="caption">boisterous dance</span><br><br>
+    <audio controls src="https://files.catbox.moe/7trsss.mp3"></audio><br>
+    <span class="caption">magician of darkness</span><br><br>
+    <audio controls src="https://files.catbox.moe/n0jxyp.mp3"></audio><br>
+    <span class="caption">sanga and touga</span><br><br>
+    <audio controls src="https://files.catbox.moe/9rog0d.mp3"></audio><br>
+    <span class="caption">traditional poem ~nervus~</span><br><br>
+    <audio controls src="https://files.catbox.moe/xkesob.mp3"></audio><br>
+    <span class="caption">poem of the battle for admiration</span><br><br>
+    <audio controls src="https://files.catbox.moe/dse0ra.mp3"></audio><br>
+    <span class="caption">when the end</span><br><br>
+    <audio controls src="https://files.catbox.moe/pyjowr.mp3"></audio><br>
+    <span class="caption">traditional poem -verum-</span> <img src="gifs%20and%20pngs/smallicons/red%20shiny%20heart%20.gif"><br><br>
+    
+    <!-- FORMAT. files hosted on catbox.moe
+<audio controls src=""></audio><br>
+    <span class="caption"></span><br><br>
+-->
+    </div>
+   </div>
+   <div class="portrait" style="position: absolute;right:0px; bottom:0px; height: 100%;">
+    <img src="imageuploads/lamento/st%e3%82%b3%e3%83%8e%e3%82%a8%e5%91%aa%e3%81%84_%e9%ba%bb%e8%a2%8b_%e3%83%9e%e3%83%b3%e3%83%88_%e9%80%9a%e5%b8%b8.png" style="margin-left: -135px;">
+   </div>
+  </div>
+ </div><!-- end fourth box -->
+ 
+ <!-- fifth box -->
+ <div class="hscroll" id="five">
+  <div class="game">
+   <!-- nav buttons-->
+   <a href="#four" class="backbutton" title="back" style="position:absolute; left:5px;bottom:0px; margin-bottom: -70px; z-index:3;"></a>
+   <a href="#six" class="nextbutton" title="next" style="position:absolute; right: 5px; bottom:0px; margin-bottom: -70px; z-index:3;"></a>
+   <!-- frame elements -->
+   <img src="gifs%20and%20pngs/frame00a.png" class="topframe">
+   <img src="gifs%20and%20pngs/frame00b.png" class="bottomframe">
+   <!-- end nav buttons -->
+   <div class="portrait">
+    <img src="imageuploads/lamento/st%e3%83%90%e3%83%ab%e3%83%89_%e6%ad%a3%e9%9d%a2_%e5%91%86%e3%82%8c.png" style="margin-left: -120px;">
+   </div>
+   <div class="text">
+    <div>
+     <img src="imageuploads/20240724_125827.jpg" style="width:100%;"><br>
+     Konoe and Rai together on my shelf ^_^<br><br>
+     I upload any scans from my collection to my <a href="https://witchertwo.tumblr.com/tagged/lamento">tumblr</a>.
+    </div>
+   </div>
+   <div class="portrait">
+    <img src="imageuploads/lamento/st%e3%83%a9%e3%82%a4_%e6%ad%a3%e9%9d%a2_%e5%96%9c.png" style="margin-left: -110px;">
+   </div>
+  </div>
+ </div><!-- end fifth box -->
+ 
+ <!-- sixth box -->
+ <div class="hscroll" id="six">
+  <div class="game">
+   <!-- nav buttons-->
+   <a href="#five" class="backbutton" title="back" style="position:absolute; left:5px;bottom:0px; margin-bottom: -70px; z-index:3;"></a>
+   <a href="#one" class="nextbutton" title="next" style="position:absolute; right: 5px; bottom:0px; margin-bottom: -70px; z-index:3;"></a>
+   <!-- frame elements -->
+   <img src="gifs%20and%20pngs/frame00a.png" class="topframe">
+   <img src="gifs%20and%20pngs/frame00b.png" class="bottomframe">
+   <!-- end nav buttons -->
+   <div class="text" style="justify-content: flex-end;width: 100%;">
+    <div><br><br>"Boys do this kind of stuff with each other all the time... right?"
+    </div>
+   </div>
+  </div>
+ </div><!-- end sixth box -->
+ 
+ <!-- FORMAT
+
+ <div class="hscroll" id="two">
+  <div class="game">
+
+   <a href="#one" class="backbutton" title="back" style="position:absolute; left:5px;bottom:0px; margin-bottom: -70px; z-index:3;"></a>
+   <a href="#two" class="nextbutton" title="next" style="position:absolute; right: 5px; bottom:0px; margin-bottom: -70px; z-index:3;"></a>
+
+   <img src="https://sanji.neocities.org/gifs%20and%20pngs/frame00a.png" class="topframe">
+   <img src="https://sanji.neocities.org/gifs%20and%20pngs/frame00b.png" class="bottomframe">
+ 
+   <div class="portrait">
+    <img src="" style="">
+   </div>
+   <div class="text"></div>
+   <div class="portrait">
+    <img src="" style="">
+   </div>
+  </div>
+ </div>
+
+
+-->
+ 
+</div><!-- end container-->
+
+</body>
+
+
+<!-- Mirrored from sanji.neocities.org/lamento by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:02:03 GMT -->
+</html>

@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from sanji.neocities.org/vergil by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:02:33 GMT -->
+<head>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="gifs%20and%20pngs/smallicons/fishing.gif">
+<title>vergil's enclyclopedia</title>
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&amp;family=My+Soul&amp;display=swap" rel="stylesheet">
+ <!-- font-family: "Eagle Lake", serif; font-family: "My Soul", serif; font-family: "Noto Sans JP", sans-serif; -->
+ <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&amp;family=Amita:wght@400;700&amp;family=Mea+Culpa&amp;display=swap" rel="stylesheet">
+ <!-- font-family: "Aguafina Script", cursive; font-family: "Amita", serif; font-family: "Mea Culpa", serif; -->
+ 
+<style>
+ body {
+  background-color: black;
+  background-image: url(gifs%20and%20pngs/ffxiv/kjFVmJL.jpg);
+  background-size:cover;
+  color:white;
+  font-size: 16px;
+  font-family: "Noto Sans JP", sans-serif;
+  cursor: url(gifs%20and%20pngs/medium/113889.png) 10 30, auto ;
+ }
+ 
+ a:hover {
+  cursor: url(gifs%20and%20pngs/medium/113895.png) 10 30, auto ;
+ }
+ 
+ #wrapper {
+  position: relative;
+  width: 1100px;
+  height:900px;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(1px 1px 3px black) drop-shadow(-1px -1px 3px black);
+ }
+ 
+ /*navbar*/
+ .xivnav {
+  display:flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+ }
+ .xivnav a:hover {
+ }
+ 
+ #lodestone {
+  background-image: url(gifs%20and%20pngs/ffxiv/sprite_logout.png);
+  background-position-x: ;
+  height: 125px;
+  width: 125px;
+ }
+ #lodestone:hover {
+  transform: scale(1.1);
+ }
+ 
+ #journal {
+  background-image: url(gifs%20and%20pngs/ffxiv/sprite_logout.png);
+  background-position-x: -135px;
+  height: 125px;
+  width: 125px;
+ }
+ #journal:hover {
+  transform: scale(1.1);
+ }
+ 
+ #party {
+  background-image: url(gifs%20and%20pngs/ffxiv/sprite_logout.png);
+  background-position-x: -265px;
+  height: 125px;
+  width: 125px;
+ }
+ #party:hover {
+  transform: scale(1.1);
+ }
+ 
+ #leves {
+  background-image: url(gifs%20and%20pngs/ffxiv/sprite_logout.png);
+  background-position-x: -390px;
+  height: 125px;
+  width: 125px;
+ }
+ #leves:hover {
+  transform: scale(1.1);
+ }
+ 
+ #armoire {
+  background-image: url(gifs%20and%20pngs/ffxiv/sprite_logout.png);
+  background-position-x: -513px;
+  height: 125px;
+  width: 125px;
+ }
+ #armoire:hover {
+  transform: scale(1.1);
+ }
+ 
+ #companion {
+  background-image: url(gifs%20and%20pngs/ffxiv/sprite_logout.png);
+  background-position-x: -650px;
+  height: 125px;
+  width: 125px;
+ }
+ #companion:hover {
+  transform: scale(1.1);
+ }
+ 
+ /*gallery*/
+ /*border credit https://pastebin.com/e9PH3Ee1*/
+ #wanted {
+  position: absolute;
+  z-index: 4;
+  top: 15px;
+  right: 70px;
+  width: 400px;
+  height:480px;
+  transform:rotate(0.005turn);
+  background-image: url(gifs%20and%20pngs/ffxiv/mobhunt_hr1.png);
+  background-size: 950px;
+  background-position-x: -10px;
+  text-align: center;
+}
+ #gallery {
+  position:relative;
+  overflow:hidden;
+  margin-top: 70px;
+ }
+ #gallery > div {
+  height: 210px;
+  width: 200px;
+  margin: 5px 0px 0px 65px;
+ }
+ #gallery img {
+  height: 210px;
+ }
+ 
+ #book {
+  position:absolute;
+  z-index: 4;
+  top: 445px;
+  left: 120px;
+  background-image: url(gifs%20and%20pngs/ffxiv/%e2%9d%930x7ABECB1E.png);
+  background-position-x: -150px;
+  background-position-y: -100px;
+  background-size: 1050px;
+  background-repeat: no-repeat;
+  height: 410px;
+  width: 735px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+ }
+ #left {
+  margin:30px 5px 60px 80px;
+  width: 270px;
+  filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px 1px black);
+ }
+ #right {
+  margin:30px 70px 60px 5px;
+  width: 270px;
+  filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px 1px black);
+ }
+ .pagetitle {
+  padding-bottom: 5px;
+  border-bottom: 2px dotted black;
+  margin-bottom: 5px;
+  font-family: "Eagle Lake", serif;
+  
+ }
+ 
+ #bookmark {
+  position:absolute;
+  z-index: 5;
+  top: 440px;
+  right: 60px;
+  background-image: url(gifs%20and%20pngs/ffxiv/%e2%9d%930x9D104BEA.png);
+  background-position-x: 220px;
+  background-size: 1270px;
+  height: 440px;
+  width: 210px;
+  transform: rotate(0.01turn);
+ }
+ #bookmark > div {
+  margin: 80px 30px 20px 30px;
+  height: 290px;
+ }
+ #everydaycarry {
+  list-style-type: "x ";
+  color:#36281f;
+ }
+ #bookmark a {
+  color: #a37749;
+ }
+ #bookmark a:hover {
+  color:#36281f;
+ }
+ 
+ #mapclutter {
+  position:absolute;
+  z-index: 3;
+  top: 60px;
+  left: 140px;
+  background-image: url(gifs%20and%20pngs/ffxiv/explorationdetail_hr1.png);
+  background-size: 690px;
+  background-position-x: -110px;
+  height: 500px;
+  width: 575px;
+  transform: rotate(-0.02turn);
+ }
+ 
+ #speechbubble {
+  position:absolute;
+  z-index: 14;
+  top: 10px;
+  right: 350px;
+  background-image: url(gifs%20and%20pngs/ffxiv/%e2%9d%930x519460D5.png);
+  background-size: 250px;
+  background-position-x: -25px;
+  background-position-y: -60px;
+  height: 130px;
+  width: 200px;
+  transform: rotate(-0.02turn);
+ }
+ #speechbubble > div {
+  margin: 22px 10px 10px 10px;
+  text-align: center;
+  filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px 1px black);
+ }
+ 
+ #header {
+  position:absolute;
+  z-index:5;
+  top: 20px;
+  left: 135px;
+  background-image: url(gifs%20and%20pngs/ffxiv/%e2%9d%930x6F26EEF9.png);
+  background-size: 740px;
+  background-position-x: -60px;
+  background-position-y: -30px;
+  height: 70px;
+  width: 400px;
+ }
+ #header > div {
+  height: 50px;
+  margin: 13px 0px 0px 30px;
+  filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px 1px black);
+  font-size: 25px;
+  font-family: "Eagle Lake", serif;
+ }
+ 
+ #summary {
+  position:absolute;
+  z-index: 7;
+  top: 145px;
+  left: 165px;
+  background-image: url(gifs%20and%20pngs/ffxiv/relic2growth_hr1.png);
+  background-position-y: -410px;
+  height: 290px;
+  width: 510px;
+  display:none;
+ }
+ 
+ .scroll {
+  overflow-x:hidden;
+  overflow-y:scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+ }
+ 
+ /*paper slip*/
+ #HEEELP {
+  position:absolute;
+  z-index: 7;
+  top: 145px;
+  left: 165px;
+  background-image: url(gifs%20and%20pngs/ffxiv/relic2growth_hr1.png);
+  background-position-y: -410px;
+  height: 290px;
+  width: 510px;
+  display:none;
+ }
+ #HEEELP > div {
+  margin: 50px 30px 10px 70px;
+  height: 175px;
+  width: 365px;
+  filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px 1px black);
+  text-align: justify;
+ }
+ 
+ /*map*/
+ #loosepages {
+  position:absolute;
+  z-index: 12;
+  top: 160px;
+  left: 240px;
+  background-image: url(gifs%20and%20pngs/ffxiv/%e2%9d%930xBE445D4C.png);
+  background-size: 725px;
+  background-position-y: -40px;
+  background-position-x: -90px;
+  height: 575px;
+  width: 575px;
+  display:none;
+  transform: rotate(-0.02turn);
+}
+ #comment {
+  position:absolute;
+  z-index: 13;
+  top: 390px;
+  left: -80px;
+  background-image: url(gifs%20and%20pngs/ffxiv/talk_basic_hr1.png);
+  background-size: 725px;
+  background-position-y: -15px;
+  background-position-x: -13px;
+  height: 150px;
+  width: 700px;
+  transform: rotate(0.02turn);
+ }
+ #comment > div {
+  margin: 30px 30px 10px 55px;
+  height: 120px;
+  color: black;
+  font-weight: 500;
+ }
+ #nameplate {
+  position:absolute;
+  z-index: 14;
+  bottom:195px;
+  transform: rotate(0.02turn);
+  font-size: 18px;
+  filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px 1px black) drop-shadow(-15px 1px 8px black) drop-shadow(25px 0px 10px black);
+ }
+ 
+ /*gpose gallery*/
+ #adventure {
+  position:absolute;
+  z-index: 12;
+  top: 160px;
+  left: 160px;
+  background-image: url(gifs%20and%20pngs/ffxiv/%e2%9d%930x8ECB47B6.png);
+  background-size: 815px;
+  background-position-y: -35px;
+  background-position-x: -10px;
+  height: 400px;
+  width: 800px;
+  display:none;
+ }
+ #adventure > div {
+  margin: 23px 20px 10px 85px;
+  height: 353px;
+  width: 625px;
+  border-radius: 10px;
+ }
+ #adventure > div img {
+  height: 100%;
+  filter: sepia(15%);
+  margin-bottom: -5px;
+ }
+ 
+ /*billboard*/
+ #marketboard {
+  position:absolute;
+  z-index: 12;
+  top: 185px;
+  left: 165px;
+  background-image: url(gifs%20and%20pngs/ffxiv/shopbillboard3_hr1.png);
+  background-size: 830px;
+  background-position-y: 0px;
+  background-position-x: -30px;
+  height: 425px;
+  width: 760px;
+  display:none;
+ }
+ #marketboard > div {
+  margin: 35px 20px 10px 146px;
+  height: 350px;
+  width: 465px;
+  filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px 1px black);
+ }
+ #trivia {
+  margin-left: 40%;
+  line-height: 30px;
+  font-size: 25px;
+  font-family: "Eagle Lake", serif;
+ }
+ #marketboard ul {
+  margin-left: -15px;
+  list-style-type: "?";
+ }
+ #marketboard li {
+  padding-left: 10px;
+ }
+ 
+ /*music player*/
+ #orchestrion {
+  position:absolute;
+  z-index: 9;
+  top: 150px;
+  left: 190px;
+  background-image: url(gifs%20and%20pngs/ffxiv/orchestrionplaylistedit_hr1.png);
+  background-size: 640px;
+  background-position-y: 0px;
+  background-position-x: 0px;
+  height: 465px;
+  width: 640px;
+  display:none;
+ }
+ #orchestrion > div {
+  margin: 108px 25px 10px 45px;
+ }
+ 
+ /*open book and piece of paper*/
+ #novella {
+  position:absolute;
+  z-index: 8;
+  top: 180px;
+  left: 190px;
+  background-image: url(gifs%20and%20pngs/ffxiv/vvdnotebookunique3_hr1.png);
+  background-size: 800px;
+  background-position-y: -5px;
+  background-position-x: -46px;
+  height: 390px;
+  width: 710px;
+  display:none;
+  transform: rotate(-0.01turn);
+ }
+ #novelpage {
+  position:absolute;
+  z-index: 9;
+  top: 210px;
+  left: 130px;
+  background-image: url(gifs%20and%20pngs/ffxiv/vvdnotebookunique3_hr1.png);
+  background-size: 800px;
+  background-position-y: 352px;
+  background-position-x: -12px;
+  height: 335px;
+  width: 560px;
+  transform: rotate(0.01turn);
+ }
+ #novelpage > div {
+  margin: 30px 20px 23px 50px;
+  height: 265px;
+  width: 455px;
+  font-family: "Amita", serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 28px;
+  word-spacing: 1px;
+  color: #ffedf6;
+  filter: drop-shadow(1px 1px 1px black) drop-shadow(-1px -1px 1px black);
+ }
+ .signature {
+  font-family: "Mea Culpa", serif;
+  font-size: 35px;
+  font-style: normal;
+  line-height: 46px;
+ }
+ 
+ ul {
+  list-style: none;
+  margin-left: -30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+ 
+ #teleport {
+  position:absolute;
+  left:58px;
+  top:-25px;
+  scale: 0.7;
+ }
+ #teleport:hover {
+  transform: rotate(-0.02turn);
+ }
+ 
+ #credit {
+  position:absolute;
+  bottom:-25px;
+  right:-25px;
+  scale: 0.7;
+ }
+ #credit:hover {
+  transform: rotate(0.02turn);
+ }
+ 
+</style>
+ 
+</head>
+ 
+<body>
+<div id="wrapper">
+ 
+ <div class="xivnav">
+ <a id="lodestone" onclick="hiquidward()" title="quick bio"></a>
+ <a id="journal" onclick="novella()" title="a letter from a friend"></a>
+ <a id="party" onclick="discover()" title="strangely marked map"></a>
+ <a id="leves" onclick="billboard()" title="bulletin board"></a>
+ <a id="armoire" onclick="ambience()" title="table orchestrion"></a>
+ <a id="companion" onclick="gposer()" title="photo gallery"></a>
+ </div>
+
+ <!-- vergil backstory-->
+<script>
+function hiquidward() {
+  var x = document.getElementById("HEEELP");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+ <div id="HEEELP">
+  <div class="scroll">
+   <i>Short Biography</i>
+   <ul>
+    <li>Full Name............................... Vergillius Arrokoth</li>
+    <li>Age.................................... unknown, but alludes to being older than his appearance suggests</li>
+    <li>Origin........................ unknown, not from Eorzea</li>
+    <li>Experience......... skywatcher, scholar, alchemist</li>
+    <li>Likes................................. study, fishing, making things, new experiences, challenging himself</li>
+    <li>Hates........................................... dishonesty, the unknown, feeling helpless, his vivid dreams </li>
+    <li>Desires............................................ to experience the world and publish an encyclopedia one day</li>
+   </ul>
+   Vergil is described as...
+   <ul>
+   <li>........diligent, hardworking, thoughtful, cerebral </li>
+   <li>........................stubborn, workaholic, insomniac</li></ul>
+  </div>
+ </div> 
+
+ <!-- map page -->
+<script>
+function discover() {
+  var x = document.getElementById("loosepages");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+ <div id="loosepages">
+  <div id="nameplate">Vergil Arrokoth</div>
+  <div id="comment">
+   <div>You aren't trying to look at my fishing spots... are you?</div>
+  </div>
+ </div>
+ 
+ <!-- book with slip-->
+<script>
+function novella() {
+  var x = document.getElementById("novella");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+ <div id="novella">
+  <div id="novelpage">
+   <div class="scroll"><span class="signature">Vergil,</span><br>
+    If you still care about your dear apprentice, then come visit me soon and help me make sense of all this paperwork I've been dealing with since taking over. You hardly come around any more and I've almost even forgotten your face... but if you just considered working for me, then we would both have the time to see each other once again, and I would have at least one reliable employee at my beck and call. I considered that favor you asked of me carefully... and I will give him one single chance, but only because it's you who asked. Be assured that you do owe me back for this favor, so come by soon and we'll see if I have anything I need you for by then.<br>
+    <span style="float: right;">your big sister, <span class="signature">Bebe Es</span></span>
+    
+   </div>
+  </div>
+ </div>
+
+ <!-- billboard-->
+<script>
+function billboard() {
+  var x = document.getElementById("marketboard");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+ <div id="marketboard">
+  <div class="scroll"><span id="trivia">Trivia</span><br>
+   <ul>
+    <li>He is frugal and tends to repair the things that he has rather than replace them. Because of his cheap habits he always has money hidden away somewhere.</li>
+    <li>Suprisingly strong despite his library-oriented lifestyle. Typically brings his tome everywhere with him despite it weighing over 30 lbs.</li>
+    <li>Has terrible handwriting, barely legible to those unfamiliar with it.</li>
+    <li>His house is either spotless and immaculate or torn apart as if he had just been robbed, and never in between.</li>
+   </ul>
+  </div>
+ </div>
+ 
+ <!-- orchestrion-->
+<script>
+function ambience() {
+  var x = document.getElementById("orchestrion");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+ <div id="orchestrion">
+  <div>
+   <iframe width="551" height="310" src="https://www.youtube-nocookie.com/embed/videoseries?si=nT0gd2dDsiWsR9LQ&amp;list=PLtivbto9Eo_UURpABQJiwvxVvD0aa0XZV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+ </div>
+ 
+ <!-- gpose gallery -->
+<script>
+function gposer() {
+  var x = document.getElementById("adventure");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+ <div id="adventure">
+  <div class="scroll">
+   <img src="gifs%20and%20pngs/ffxiv/2024-12-02_13-26-51-349_Fairy%20Gameplay.png">
+   <img src="gifs%20and%20pngs/ffxiv/2021-12-09_21-36-02-882_OkamiGameplay.png">
+  </div>
+ </div>
+
+<!-- non toggleable site elements-->
+ <!-- title -->
+ <div id="header">
+  <div>Encyclopedia Eorzea</div>
+ </div>
+ 
+ <!-- speech bubble-->
+ <div id="speechbubble">
+  <div>...I'm usually<br> more organized than this... I swear?</div>
+ </div>
+ 
+ <div id="wanted">
+  <div id="gallery">
+   <div class="scroll" title="scroll me!!">
+     <a href="https://x.com/Valendar_" target="_blank">
+    <img src="vergil/vergiltransreal.png"></a>
+    <a target="_blank" href="https://x.com/sonzies_"><img src="vergil/fvergil.png"></a>
+   </div>
+  </div>
+ </div>
+ 
+ <!-- vergil's 'diary' -->
+ <div id="book">
+  <div id="left" class="scroll">
+   <div class="pagetitle">Notes on my affliction...</div>
+   I was not born on Eorzea- in fact, the first half of my life is absent from my mind. No matter what length I go to I cannot jog my memories of the past. There is a hole in my head, and in my heart too, that I am always trying to fill up with my experiences; though I have my friends to thank for aiding in my efforts and following my journey to uncover my past- my apprentice, most of all. I don't often dream- sometimes I barely sleep, but when I do I dream vividly of a familiar place just out of my reaches, and I can't help but feel longingly as if I live the other half of my life there in my dreams. When I allow it to, the frustration of having my answers so close nearly drives me mad, but like to I think that it has tempered my spirit and made me a better man to learn to let go as I have. <br>
+   
+  </div>
+  <div id="right" class="scroll">
+   <div class="pagetitle">Observations of myself...</div>
+   I wish that I could relax more- but I'm the type to always keep my mind occupied and can't stand to sit still for long. My scholastic pursuits take up much of my spare time and, perhaps because of the old books I read, I have been told that I speak in an old-fasioned manner. To cut loose and to spend more time in nature I've taken up angling recently. My greatest natural talent is that I can always tell what the weather is going to be like the moment that I step outside- which comes in quite handily for my fishing pursuits. When I find people that I like I tend to find myself quickly caught up in their problems and sometimes their schemes, and often without even realising I've done so. 
+  </div>
+ </div>
+ 
+ <!-- inventory -->
+ <div id="bookmark">
+  <div>
+   <ul id="everydaycarry">
+    <li><a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/item/eb511e3871f/" class="eorzeadb_link">Soul of the Scholar</a></li>
+    <li><a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/item/ae61b65c60b/" class="eorzeadb_link">Aetheroconductive Quill</a></li>
+    <li><a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/item/7d156d3eb7f/" class="eorzeadb_link">Classified Documents</a></li>
+    <li><a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/item/f31f4c44990/" class="eorzeadb_link">Sealed Letter</a></li>
+    <li><a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/item/9299517859d/" class="eorzeadb_link">Aged Grimoire</a></li>
+    <li><a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/item/a189bc584c0/" class="eorzeadb_link">Cryptic Seal</a></li>
+    <li><a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/item/1e5ff3150dd/" class="eorzeadb_link">Sleep Ward Potion</a></li>
+   </ul>
+  </div>
+ </div>
+ <script src="../lds-img.finalfantasyxiv.com/pc/global/js/eorzeadb/loader43a0.js?v3"></script> <!--lodestone hover-->
+ 
+ <!-- empty div with clutter-->
+ <div id="mapclutter"></div>
+ 
+ <!-- teleport home-->
+<div id="teleport"><a href="index.html"><img src="gifs%20and%20pngs/ffxiv/PlaceName.png" title="teleport home?"></a></div>
+ 
+ <!-- credit -->
+ <div id="credit"><a href="https://xivapi.com/" title="graphics from xivapi and textools"><img src="gifs%20and%20pngs/ffxiv/Title.png"></a></div>
+ 
+</div>
+
+</body>
+ 
+
+<!-- Mirrored from sanji.neocities.org/vergil by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:02:47 GMT -->
+</html>

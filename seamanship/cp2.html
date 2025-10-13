@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+ 
+<!-- Mirrored from sanji.neocities.org/seamanship/cp2 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:04:50 GMT -->
+<head>
+  <meta charset="UTF-8" />
+  <title>CP2 Notes</title>
+
+  <link rel="stylesheet" href="../harbour.css" type="text/css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&amp;display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Belleza&amp;display=swap" rel="stylesheet"> <!-- font-family: "Belleza", sans-serif; -->
+ <link href="https://fonts.googleapis.com/css2?family=Koulen&amp;display=swap" rel="stylesheet"> <!-- font-family: "Koulen", sans-serif; -->
+ <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&amp;display=swap" rel="stylesheet"> <!-- font-family: "Kosugi Maru", sans-serif; -->
+
+<style>
+ 
+ .wiki {
+  border: 1px solid white;
+  padding: 0.2em;
+  margin: 0.2em;
+  float:right;
+  width: 250px;
+ }
+ 
+ .wiki img {
+  height: 250px;
+  background-color: white;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+ }
+ 
+ .whiteboard {
+  display:flex;
+  flex-direction: column;
+  border: 1px solid white;
+  padding: 0.2em;
+  margin: 0.2em;
+  float:right;
+  width: 550px;
+  max-height: 350px;
+ }
+ 
+ .diagram {
+  display:inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow-x: scroll;
+ }
+ 
+ .diagram img {
+  background-color: white;
+  object-fit: contain;
+  max-height: 325px;
+ }
+ 
+ .desc {
+  text-align: center;
+ }
+ 
+ .info {
+  display:flex;
+  flex-direction: column;
+  gap: 5px;
+ }
+ 
+ .info > div {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 0.5em;
+  border-bottom: 2px dotted white;
+ }
+ 
+ .divider {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-bottom: 2px dotted white;
+ }
+ 
+ li {
+  list-style: lower-alpha;
+  margin-bottom: 5px;
+  margin-top: 5px;
+ }
+ 
+ .cite {
+  color: crimson;
+ }
+ 
+ .mt {
+ }
+ .mt li {
+  list-style: none;
+ }
+ 
+  
+  </style>
+ </head>
+ <body>
+  <!-- FORMAT
+
+<div class="wiki"><img src=""><div class="desc"></div>
+
+-->
+  
+  <div id="chartwork">
+   <h2>Chartwork and Pilotage</h2>
+   <h3>Definitions</h3>
+   <div class="indent info">
+    <div><b>Longitude</b>: an anglular measurement which is based off of the Prime Meridian. Meridians of longitude run 'vertically' between the north and south pole, but represent distances either east or west of the prime meridian. The distance between lines of longitude will change depending on the latitude (ie. distances between meridians at the equator will vastly differ from distances between meridians at the polar latitudes). All lines of longitude are considered great circles. (<a href="https://en.wikipedia.org/wiki/Longitude">wikipedia</a>)</div>
+    <div><b>Latitude</b>: a geographic representation of position north or south of the equator. Lines of latitude run 'horizontally' but measure north and south, and are called parallels as opposed to angular measurements because they run parallel to one another measuring northerly or southerly positions. Parallels of latitude (other than the equator) are not great circles because they do not pass through the center of the earth. Latitude is used in chartwork for measuring distances because there is no chart distortion in distance when working with mercator charts. (<a href="https://en.wikipedia.org/wiki/Latitude">wikipedia</a>)</div>
+    <div><div class="wiki"><img src="../imageuploads/marine/Great_circle_hemispheres.png"><div class="desc">demonstration of a great circle</div></div>
+     <b>Great Circle</b>: the largest circumfrence which can be drawn on any sphere- which in navigation applies to the spherical shape of the earth. A great sphere must divide the earth into 'halves' by passing through the center of the sphere. All lines of longitude are great circles (as they pass from pole to pole), but lines of latitude other than the equator are not great circles. The shortest route possible across the circumfrence of the earth is to follow along the curvature of a great circle. (<a href="https://en.wikipedia.org/wiki/Great_circle">wikipedia</a>)</div>
+    <div><div class="wiki"><img src="../imageuploads/marine/meridians.jpg"><div class="desc">all of the curved lines on this diagram are meridians <i>and</i> great circles</div></div>
+     <b>Meridians</b>: lines which run from pole to pole connecting areas of equal longitude. Because the earth is considered a sphere (it is in actuality an <a href="https://simple.wikipedia.org/wiki/Oblate_spheroid">oblate spheroid</a>) and all meridians conjoin at the north and south poles, the distance between meridians is not equal everywhere (which is mostly relevant when measuring distances on the chart itself). There is one meridian of particular note, called the Prime Meridian, which is where all angular measurements of longitude are referenced from (as in easterly or westerly of the prime meridian). The prime meridian is located near Greenwich in the United Kingdom, which is also where GMT (Greenwich Mean Time), the international time standard, originates. Because of the way both time and longitude are measured, they have a close relation to one another. (<a href="https://en.wikipedia.org/wiki/Meridian_(geography)">wikipedia</a>)</div>
+    
+    <div><b>Rhumb Line</b>: a line that cuts across all meridians at the same angle and maintains a constant true direction. Using the Mercator projection, rhumb lines appear as straight lines. To follow a true heading in a straight line irregardless of the meridians is to follow a rhumb line course. If you drew a rhumb line from one pole and followed it all the way to the other, it would form a spirallic <a href="https://en.wikipedia.org/wiki/Loxodromic_navigation">loxodrome</a>. (<a href="https://en.wikipedia.org/wiki/Rhumb_line">wikipedia</a>)
+    </div>
+    
+    <div><div class="wiki"><img src="../imageuploads/marine/Worlds_animate.gif"><div class="desc">demonstation of mercator map distortion</div></div>
+    <b>Mercator Chart</b>: the standard kind of map that is used almost universally because of its simplicity for navigating in small areas. The mercator map represents the world as if it were a rectangular shape rather than a spherical one, and thereby distorts areas at extreme latitudes (this is why antarctica appears giant on world maps), making them appear much larger than they actually are. The mercator chart is straightforward for navigation because drawing a straight line between two points will give a direction to follow to get to your destination. On larger scale maps, this is a problem because the earth is spherical; but for navigating on the coast and at non-extreme latitudes, mercator charts are the best choise. </div>
+    
+    
+   </div><!-- end indent-->
+   <h3>Chartwork</h3>
+   <div class="indent info">
+    <div><b>Video Lessons and Refreshers</b>: Content covering practical chartwork is difficult to understand when written out and presents better as videos to show the different steps. When I was learning chartwork I watched video tutorials extensively. My favorites are <a href="https://www.youtube.com/watch?v=VKKpZwPOvU8&amp;list=PLhS1an815Y5MXPerYI25aVfbj6a0o_GYk">Northeastern Maritime Insitute Lessons</a> (playlist covering basic chart plotting into plotting with current, wind, and tide. tide calculations, compass corrections), and <a href="https://www.youtube.com/@RefreshMaritime/videos">Refresh Maritime</a> has a great  <a href="https://www.youtube.com/watch?v=8PJcG0UoMmk&amp;t=15s">running fix tutorial</a> and <a href="https://www.youtube.com/watch?v=XpfxhqQlhN4">explaination of chart datums</a>. </div>
+    
+    <div>
+     <div class="wiki"><img src="../imageuploads/marine/airplane_drift.png" style="object-fit: contain;"><div class="desc">example of the navigation triangle. A-B is the heading line (CTS), B-C is the direction and forces of set, and A-C is the course actually travelled (CMG) due to the forces of set.</div></div>
+     <b>Dead Reckoning</b>: the process of calculating the current position of an object by using a previously determined position to create a <i>fix</i> (position-fixing). Distance travelled is equal to speed multiplied by time elapsed (which is measured either in hours or minutes), so any two out of these three kinds of information present in a problem will allow the last one to be found. Dead reckoning begins with a known position, such as 1 nautical mile abeam of a waypoint at a certain time- and from there a <i>line of position (LOP)</i> is created in a heading direction (which can be either transferred from or measured by using the parallel ruler to measure off of the nearest chart compass rose). To obtain distance travelled on the chart, the navigation dividers are used to measure incriments of Latitude on the side of the chart (1 degree is equal to 1 minute, and 1 minute is equal to 1 nautical mile), which are transferred onto the line of position. A line of position or fix without time noted is useless; time must always be indicated when plotting on the chart because time is a crucial part of the distance=(speed)x(time) formula.
+     (<a href="https://en.wikipedia.org/wiki/Dead_reckoning">wikipedia</a>)
+    </div>
+    
+    <div><b>Current and Tide</b>: the direction of tidal push, called the <i>set</i>, is expressed as a degree measurement on the compass, referencing the direction tide is pushing (a northerly tide would push towards north). The speed of tidal currents is called the 'rate', and the distance that elapses under tidal effects is called 'drift'. The heading of set is expressed on the chart as an LOP with three arrows in the middle, pointing the direction of travel.
+    </div>
+    
+    <div><b>Wind and Leeway</b>: wind measurements are expressed as the cardinal direction they originate from (ie. a northerly wind comes from the north and blows the direction of south). Wind is accounted for mathematically in calculations, but is not plotted at the chart because it is subject to rapid change.</div>
+    
+    <div>
+     <div class="wiki"><img src="../imageuploads/marine/20241025125523_001.jpg" style="object-fit: contain;"><div class="desc">a triangle of velocities is constructed to help determine forces affecting the vessels heading</div></div>
+     <b>Course Made Good (CMG) and Speed Made Good (SMG)</b>: to be 'made good' refers to the actual speed or course which is travelled, as opposed to information which is assumed like the course steered or vessel speed. Because a vessels speed is subject to tidal forces, the <i>speed through the water (STW)</i> is different than the <i>speed made good</i>, which can only be measured by finding a distance travelled to reference against the STW. A <i>course made good</i> is in reference to a vessels heading under environmental forces like tide, which can create a difference between <i>course to steer (CTS)</i> and <i>course made good</i>. A vessel could be steering a course of 180 degrees, but due to the force of tide setting to 170 could be pointing towards 180 (CTS) but travelling in the direction of 170 (CMG). In chartwork, the LOP which represents course made good is expressed with two arrows marking the direction of travel. The CTS heading is marked with one arrow pointing in the direction of travel.</div>
+    
+    <div>
+     <div class="whiteboard">
+     <div class="diagram"><img src="../imageuploads/marine/findingCMG.png" ><img src="../imageuploads/marine/findingCTStoMG.png">
+     <img src="../imageuploads/marine/findingCTS.png"></div>
+     <div class="desc">diagrams of the nav triangle from Bowditch - Chapter 10</div></div>
+     <b>The Navigation Triangle</b>: To create a reprentation of forces affecting navigation, a triangle of velocities or 'nav triangle' can be drawn to measure them. A navigation triangle typically represents either a period of 60 minutes (vessel speed and tidal drift will give a true distance travelled over 60 min) or a period of 30 minutes (all information measured hourly, like speed, must be halved in this case), but can be scaled up or down to represent larger or smaller periods of time. The diagrams shown here represent different orders that the triangle is created in to determine different info, always drawn in the order of A-B, B-C, C-A.
+    </div> 
+    
+    <div><b>Allowing Current</b>: when <i>allowing</i> the effects of the current to push the vessel, the work order is as such:<br>
+    <ul>
+     <li>the vessels heading (CTS) is noted and converted into a true bearing (from a gyro, magnetic or compass bearing). Gyro error, or deviation and then variation are accounted for (heading is converted into true bearing),</li>
+     <li>gyro error, or deviation and then variation are accounted for (heading is converted into true bearing),</li>
+     <li>with the ships heading now converted to a true bearing, the effects of leeway can now be accounted for mathematically,</li>
+     <li>with leeway now sorted, the CTS can be plotted on the chart. Track through the water is drawn,</li>
+     <li>Tidal effects are accounted for,</li>
+     <li>Course over the ground (CMG) is determined. (bearing is converted to true and can be plotted on the chart)</li>
+    </ul>
+     
+    </div>
+    
+    <div><b>Counteracting Current</b>: when <i>countering</i> the effects of the current to maintain a particular heading, the work order is as such:<br>
+    <ul>
+     <li>The desired course over the ground is noted and plotted on the chart,</li>
+     <li>the direction of current/tidal push is noted,</li>
+     <li>course to steer is determined by 'closing' the navigation triangle, (giving a true bearing to be converted later on)</li>
+     <li>leeway/wind direction is accounted for at the start of calculations, and is not plotted</li>
+     <li>ships heading (CTS) is converted into a compass or gyrocompass heading, gyro error, or variation and deviation are calculated,</li>
+     <li>A course to steer is determined (bearing has been converted to a compass heading for the navigator's use)</li>
+    </ul>
+    </div>
+    
+    <div><b>Position Fixing</b>: it is important for the navigator to take regular fixes to determine and confirm their position. There are many different ways to fix position depending on what information and tools are available to the navigator at the time. It is most common to determine position by drawing two lines of position from diffent known objects (static objects marked on the chart), creating a 'fix' where they intersect that determines the position of the vessel. It is not always possible to have two reliable objects to fix position from, in which case the <a href="https://www.youtube.com/watch?v=8PJcG0UoMmk">running fix</a> is used.</div>
+    
+    <div><b>Horizontal Sextant Angles</b>: horizontal sextant angle questions and problems in chartwork have very specific wording that can typically stand out and identify them immediately. The telltale sign of a horizontal sextant angle problem is the presence of two angular measurements between two or three  points of interest.</div>
+    
+   </div>
+   
+   <h3>Tidework</h3>
+   <div class="indent info">
+    <div>Tides are caused by the gravitational attraction of both the sun and the moon on the oceans of earth. Because of the moon's close proximity, it has the greatest gravitational effect on the ocean. When the sun, moon, and earth are all in a line during the new or full moon, the tidal range will be greater than normal, called a <a href="https://en.wikipedia.org/wiki/Tide#Spring">spring tide</a>. When the moon is at its closest point of orbit to earth, it is considered to be at <a href="https://en.wikipedia.org/wiki/Apsis">perigee</a> and will have the greatest influence on the tides, leading to <a href="https://en.wikipedia.org/wiki/Perigean_spring_tide">perigean spring tides</a> and <a href="https://en.wikipedia.org/wiki/King_tide">'king tides'</a> that occur a few times in a year. Because the length of a <a href="https://en.wikipedia.org/wiki/Lunar_day">lunar day</a> is close to 24 hours, most areas will experience two <i>high waters</i> and two <i>low waters</i> in a day, which is referred to as being <a href="http://oceanmotion.org/html/background/tides-types.htm">semidiurnal</a> or mixed semidiurnal. Diurnal tide cycles are more uncommon and typically occur in enclosed basins. The <a href="https://en.wikipedia.org/wiki/Bay_of_Fundy">Bay of Fundy</a> on the eastern coast of canada is an area known for having an extreme tidal range of 16 meters (52 feet), almost 10 times the world average. 
+   <br><br>
+   <div class="wiki"><img src="../imageuploads/marine/fundy.gif" style="object-fit: contain">demonstration of tide difference</div>
+    </div>
+   </div><!--end of tidework-->
+   
+   <h3>Buoyage</h3>
+   <div class="info indent">
+    <div><b>Buoys</b>: Buoys are a type of floating aid to navigation, and are part of the aids to navigation system, along with fixed navigation-aids like lighthouses and electronic aids like RACONS. Buoys, like all aids to navigation, come in many different shapes like nun (cylindrical with conical top), can (cylindrical), cone (conical shape), pillar (frame with solid parts) and spar (a nail-like shape). Buoys are typically a combination of multiple differend aids to navigation, typically being outfitted with bells (audible aids), lights (visual aids), and topmarks (daybeacons). As useful as they are, buoys are not as reliable as fixed navigation aids because their position could potentially shift in heavy weather; therefore heavy reliance on buoys for navigation may open the navigator up to danger (such as using buoys as waypoints as opposed to fixed aids, or sailing too close to buoys that may be displaced from their hazard). <a href="http://fishing-app.gpsnauticalcharts.com/i-boating-fishing-web-app/fishing-marine-charts-navigation.html#7.94/53.099/-131.474">Online chart viewers</a> can be helpful in visualizing the buoyage systems around the world.</div>
+    <div><b>Buoyage Systems</b>: the world is split into two buoyage systems, IALA A (europe, australia, africa and west asia), and IALA B (north and south america, japan and the phillipines). In IALA A, a port hand lateral buoy will be red, matching the red port-side light of the vessel. In IALA B, a port hand lateral buoy will be green. A saying regarding IALA B regions is 'red, right, return,' to signify keeping a <i>red</i> starboard-hand lateral buoy on the starboard or <i>right-hand</i> side of the vessel, when <i>returning</i> to harbour or proceeding upstream (the direction of which is assumed North on the west coast, and south on the East coast). It is of great importance to be aware of the buoyage system in an area when passage-planning. IALA has a <a href="https://www.iala-aism.org/wiki/dictionary/index.php/Main_Page">digital dictionary of international aids to marine navigation</a>, which is extremely useful for studying the technical definitions of particular equipment that pop up in examinations (like diaphone horns, occulting light characteristics, etc.).
+    </div>
+    <div><div class="wiki"><img src="../imageuploads/marine/Visual_Aid_to_Navigation_Guide_-_Region_B_-_Day.svg.png" style="object-fit: contain"><div class="desc">a general idea of the buoyage system</div></div>
+     <b>Lateral Buoys</b>: starboard and port hand buoys indicate which side they should be <i>kept</i> to while passing them, and are colored either red or green (or a combination of both), have either a triangle or a square topmark, and either a red or green light (matching their color). In IALA B, a port-hand lateral buoy is green and should be kept to the port side; and similarily a starboard-hand buoy is red and should be kept to the starboard side when passing. A starboard hand buoy flashes <i>red</i> 1 time every 4 seconds. A Port hand buoy flashes <i>green</i> 1 time every 4 seconds. Bifucation buoys indicate a split into a main and secondary channel or passage. To use the main channel indicated by a bifurcation buoy or marker, the buoy must be kept to the side it primarily indicates; a port-hand bifurcation marker indicates a primary channel to port and a secondary channel to starboard, and a starboard bifurcation would indicate primary channel to starboard and secondary to port. The 'shape' indicating starboard is a triangle (Triangles have 3 points, which make them odd. Starboard contains 9 letters, which makes it odd. Starboard is always associated with odd numbers onboard the vessel and starboard buoys will always be odd-numbered). The 'shape' indicating port is the square (Squares have 4 points, making them even. Port has 4 letters making it even; and it is always associated with even numbers. Port buoys are always even-numbered). <a href="https://tc.canada.ca/en/marine-transportation/marine-safety/buoys-markers">This section of TP10038-E</a> clearly explains the IALA B lateral buoys. (<a href="https://en.wikipedia.org/wiki/Lateral_mark">wikipedia</a>)
+    </div>
+    <div><div class="wiki"><img src="../imageuploads/marine/Cardinal_Marks.gif"><div class="desc">it is difficult to see the topmarks of a buoy unless close to it</div></div>
+     <b>Cardinal Buoys</b>: buoys and markers which indicate that safe water exists in a cardinal direction relative to their position. Cardinal buoys are colored yellow and black, have white lights, and have black triangle-shaped top marks. The topmarks on a cardinal buoy will point with their triangular 'arrows' towards the black part of the buoy to identify it as a north, east, south, or west cardinal buoy. The lights on cardinal buoys are associated with the numbers on the clock; north will flash 1 time every 1 second, east 3 times every 5 seconds, south 6 times with 1 long flash every 10 seconds, and west flashing 9 times in 10 seconds. (<a href="https://en.wikipedia.org/wiki/Cardinal_mark">wikipedia</a>)
+   </div>
+    
+  </div>
+   
+   <h3>Passage Planning</h3>
+   <div class="indent info">
+    <div>TBA</div>
+   </div>
+   
+  </div><!-- end of chartwork-->
+   
+ </body>
+
+<!-- Mirrored from sanji.neocities.org/seamanship/cp2 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:04:54 GMT -->
+</html>

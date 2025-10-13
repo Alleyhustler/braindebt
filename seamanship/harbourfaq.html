@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<!-- Mirrored from sanji.neocities.org/seamanship/harbourfaq by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:03:27 GMT -->
+<head>
+  <meta charset="UTF-8" />
+  <title>harbour</title>
+  
+  <link rel="stylesheet" href="../harbour.css" type="text/css">
+    
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&amp;display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Belleza&amp;display=swap" rel="stylesheet"> <!-- font-family: "Belleza", sans-serif; -->
+ <link href="https://fonts.googleapis.com/css2?family=Koulen&amp;display=swap" rel="stylesheet"> <!-- font-family: "Koulen", sans-serif; -->
+ <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&amp;display=swap" rel="stylesheet"> <!-- font-family: "Kosugi Maru", sans-serif; -->
+
+<style>
+ #askbox {
+  margin: 10px auto 20px auto;
+ }
+ 
+ #message-box {
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid;
+  margin: 15px 0px 0px 0px;
+  padding: 6px;
+  font-size: 16px;
+  width: calc(100% - 100px);
+}
+ #send-message {
+  font-size: 16px;
+}
+ #message-status {
+  }
+
+ #
+</style>
+  
+ </head>
+ <body>
+  
+  <h2>FAQ</h2>
+   
+  <div id="askbox">
+  <div>Questions asked regarding my job and general work in the marine industry. Curious about anything? Ask me anything related to ships, marine career progression (!?) or tell me a marine fact.  </div>
+  <!-- -->
+  <input id="message-box" type="text" placeholder="ask away">
+  <button id="send-message" type="submit" onclick="onClickSend()">Send</button>
+<span id="message-status"></span>
+ </div>
+<!-- https://frogtab.com/ -->
+<script>
+  const domMessageBox = document.getElementById("message-box");
+  const domMessageStatus = document.getElementById("message-status");
+  let encryptAndSend = null;
+  async function onClickSend() {
+    const message = domMessageBox.value.trim();
+    if (message == "") {
+      return;
+    }
+    domMessageBox.value = "";
+    domMessageStatus.textContent = "...sending";
+    let success = false;
+    try {
+      if (!encryptAndSend) {
+        const frogtab = await import("../../frogtab.com/open/sdk.js");
+        encryptAndSend = await frogtab.connectToInbox("a73080f0-56fa-4eb5-8e4e-c4e60a32d97e");
+      }
+      success = await encryptAndSend(`a radio communication arrives: '${message}'`);
+    }
+    catch (err) {}
+    if (success) {
+      domMessageStatus.textContent = "message sent!";
+      setTimeout(() => {
+        domMessageStatus.textContent = "";
+      }, 3000);
+    }
+    else {
+      domMessageBox.value = message;
+      domMessageStatus.textContent = "";
+    }
+  }
+</script><!-- src= https://maybecoding.bearblog.dev/adding-a-private-feedback-box-to-bear/ YAHOOO -->
+  
+  <h4>What do I do at work?</h4>
+  <div class="indent">I am a deckhand on a 500ft commercial passenger ferry. I work 2 week watches/shifts and live onboard the ship during that time. Deckhands have a really wide variety of general tasks they perform onboard, so I kind of just do various small jobs like keeping lookout (mostly for whales and big logs), loading traffic and inspecting equipment.</div>
+  
+  <h4>How did you get into this line of work?</h4>
+  <div class="indent">
+   I took a 6-week course on seamanship in university and 2 marine emergency duty (MEDs) courses to become qualified. I didn't really know much about ships at that time and also didn't grow up on the coast where I could see them; but it ended up being a perfect fit for me.
+  </div>
+  
+  <h4>What is your favorite kind of ship?</h4>
+  <div class="indent">I love any large ship, but my favorite type is probably the <a href="https://en.wikipedia.org/wiki/Heavy-lift_ship">semi-submersible heavy-lift vessel</a>. This kind of ship is really cool- they are engineered with decks low to the waterline and are designed to be ballasted down into the water, 'submerging' most of the ship and allowing heavy/large cargo to be floated onto the deck. These are the kinds of boats that tow massive factory equipment, offshore installations, and other ships around the world.
+  </div>
+ 
+ </body>
+
+<!-- Mirrored from sanji.neocities.org/seamanship/harbourfaq by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:03:27 GMT -->
+</html>

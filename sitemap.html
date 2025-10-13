@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from sanji.neocities.org/sitemap by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:01:03 GMT -->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>chartroom</title>
+ 
+<link rel="shortcut icon" href="assets/pixels/worldmap.gif">
+<link rel="stylesheet" href="dock.css" /> <!--DO NOT FORGET TO CHECK THIS LINK !!!-->
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Tagesschrift&amp;display=swap" rel="stylesheet">
+<!-- 
+font-family: "Inconsolata", monospace; 
+font-family: "Tagesschrift", system-ui;
+font-family: "Playfair Display", serif;
+-->
+ 
+<style>
+ body {
+  background-color: var(--night);
+  color: var(--day);
+  text-align: center;
+ }
+ 
+ #wrapper {
+  width: 1000px;
+  height: calc(100vh - 40px);
+  margin: 25px auto 25px auto;
+  position:relative;
+ }
+ 
+ /*chart background and container*/
+ #chartroom {
+  background-image: url(assets/chart/longcahrtroom.png);
+  background-position: -100px;
+  width: 1000px;
+  height: 700px;
+  margin: 10px auto 10px auto;
+  -webkit-box-shadow: inset 0px 0px 26px 20px var(--night); 
+  box-shadow: inset 0px 0px 35px 50px var(--night);
+  position:relative;
+ }
+ 
+ #chart {
+  position: absolute;
+  top: 251px;
+  left: 172px;
+  filter: drop-shadow(-1px 1px 3px black) drop-shadow(0px 0px 5px white);
+  z-index: 5;
+ }
+ #chart:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 5px 5px white) drop-shadow(-10px -5px 15px white);
+  left: 145px;
+ }
+ 
+ #monitor {
+  position: absolute;
+  top: 136px;
+  left: 158px;
+  filter: drop-shadow(-1px 1px 3px black) drop-shadow(0px 0px 5px white);
+  z-index: 5;
+ }
+ #monitor:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 5px 5px white) drop-shadow(-10px -5px 15px white);
+  top: 133px`;
+ }
+ 
+ #navtex {
+  position: absolute;
+  top: 224px;
+  right: 49px;
+  filter: drop-shadow(-1px 1px 3px black) drop-shadow(0px 0px 5px white);
+  z-index: 5;
+ }
+ #navtex:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 5px 5px white) drop-shadow(-10px -5px 15px white);
+  right: 46px;
+ }
+ 
+ /*site map*/
+ #ENC {
+  background-color: white;
+  color:black;
+  font-family: "Inconsolata", monospace; 
+  margin: 5px 5px 0px 5px;
+  position:absolute;
+  bottom:0px;
+  left: 95px;
+  display:none;/*set to block when working on element*/
+  width: 800px;
+  height: 700px;
+  z-index: 20;
+  filter: drop-shadow(1px 1px 3px black);
+  -webkit-box-shadow: 0px 0px 32px 400px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 32px 900px rgba(0, 0, 0, 0.36);
+ }
+ #ENC button {
+  float:right;
+ }
+ 
+ #chartdisplay {
+  background-image: url(assets/chart/fuglychaart.png);
+  margin: 20px auto 0px auto;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 650px;
+  position: relative;
+  border: 1px solid black;
+ }
+ 
+ #riler {
+  position: absolute; 
+  bottom:220px; 
+  right:-200px; 
+  transform: rotate(0turn);
+  filter: drop-shadow(0px 1px 3px #000000);
+  width: 300px;
+ }
+ #riler:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0px 1px 3px #000000) drop-shadow(-4px -3px 9px white);
+ }
+ 
+ .buoy {
+  position: absolute;
+ }
+ .buoy img {
+  width: 27px;
+  z-index: 15;
+ }
+ .buoy:hover {
+  transform: scale(1.2);
+ }
+ 
+ .landmark {
+  position:absolute;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+ }
+ .major { 
+  font-style: italic; 
+  letter-spacing: 4px;
+  font-size: 18px;
+ }
+ 
+ /*SOURCE= https://obby.dog/test-CSS/toys1 <3*/
+ /*Tooltip Follow Start*/
+.contents {
+  cursor: crosshair;
+  display: inline-block;
+  z-index: 999;
+}
+.contents:hover .contentstooltip {
+    opacity: 1;
+}
+.contents h1 {
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 13px;
+  text-align: right;
+  font-family: serif;
+  margin: 0px 5px 0px 2px;
+}
+.contentstooltip {
+  opacity: 0;
+  margin-top: -35px;
+  margin-left: 32px;
+  position: fixed;
+  width: 150px;
+  height: auto;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: left;
+  padding: 0.3em;
+  padding-bottom:0.2em;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius:2px;
+  pointer-events: none; /* This prevents the box from appearing when hovered. */
+  -webkit-transition: opacity .1s linear, top .1s ease-in-out;
+  transition: opacity .1s linear, top .1s ease-in-out; 
+}
+.contentstooltip.arrow-left:after {
+  content: " ";
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid rgba(0,0,0,0.8);
+  border-left: none;
+  border-bottom: 10px solid transparent;
+}
+.contentstooltip h1 {text-align: left;}
+.max {width: max-content;}
+/*Tooltip Follow End*/
+ 
+ /*site links*/
+ #notice {
+  background-color: var(--night);
+  position: absolute;
+  z-index: 2;
+  bottom:0px;
+  left:315px;
+  height: 500px;
+  width: 300px;
+  padding: 10px 15px 10px 15px;
+  z-index:20;
+  text-align: left; 
+  border: 1px solid white;
+  display:none;
+  -webkit-box-shadow: 0px 0px 15px 10px var(--night); 
+  box-shadow: 0px 0px 15px 10px var(--night);
+ }
+ 
+ #notice ul ul {
+  margin-left: -23px;
+ }
+ #notice ul ul li {
+  list-style: "- ";
+ }
+ #notice ul li {
+  list-style: "";
+ }
+ #notice header {
+  font-size: 30px;
+  text-align: center;
+ }
+ #linkz {
+  margin: 0px auto 0px auto;
+ }
+ #linkznotice {
+  position: relative;
+ }
+ #pencil {
+  position: absolute;
+  left:-75px;
+  top:-455px;
+  width: 110px;
+  transform: rotate(0turn);
+ }
+ #pencil:hover {
+  transform: scale(1.05) rotate(-0.01turn);
+  filter: drop-shadow(0px 1px 3px #000000) drop-shadow(-4px -3px 9px white);
+ }
+ 
+ 
+ #notice > button {
+  position: absolute;
+  top:16px;
+  left:-13px;
+ }
+ #notice > button:hover {
+  transform: scale(1.2);
+ }
+ 
+ #notmar {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 2;
+  bottom:0px;
+  left:175px;
+  height: 600px;
+  width: 600px;
+  padding: 0px 15px 10px 15px;
+  z-index:20;
+  text-align: left; 
+  display:none;
+  -webkit-box-shadow: 0px 0px 15px 10px #000000; 
+  box-shadow: 0px 0px 15px 10px #000000;
+ }
+ #guestbook {
+  width: 600px;
+  height: calc(100% - 40px);
+  margin: 0px 25px 0px 0px;
+ }
+ 
+ .chartroomtt {
+  position: relative;
+  display: inline-block;
+ }
+ 
+ .chartroomtt tttext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+ }
+
+/*navigation sidebar*/
+	#musterlist {
+		position: absolute;
+		z-index: 99;
+		left: 0px;
+		top: 30%;
+		width: 125px;
+	}
+	#musterlist tr:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.2);
+ }
+	#musterlist tr {
+		background-color: rgba(255, 255, 255, 0.1);
+     float:left;
+	}
+	#musterlist img {
+		height: 20px;
+		aspect-ratio: 1/1;
+		filter: drop-shadow(1px 1px 0px white) drop-shadow(-1px -1px 0px white);
+		object-fit: cover;
+	}
+	#musterlist a {
+	}
+	#musterlist a:hover {
+		font-style: italic;
+		text-shadow: 0 0 15px rgba(178, 0, 255, 0.75), 0 0 10px rgb(79, 0, 255);
+		cursor: help; 
+	}
+	
+	/* Forward hover effect */
+.hvr-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}
+/*NAV SIDEBAR*/
+ 
+ @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+  #notice {
+   display:block;
+  }
+  #musterlist { display: none; }
+  
+ }
+ 
+</style>
+ 
+
+ 
+</head>
+ 
+<body>
+ 
+
+<!-- NAV SIDEBAR-->
+<nav id="musterlist">
+	<table>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/anchodddr.gif"></td>
+			<td><a href="index.html">harbour</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/filingcab.gif"></td>
+			<td><a href="office.html">office</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/worldmap.gif"></td>
+			<td><a href="sitemap.html">chartroom</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/fishing.gif"></td>
+			<td><a href="seamanship.html">wheelhouse</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/blue_green%20photo%20cards%20.gif"></td>
+			<td><a href="gallery.html">photos</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/an-book.gif"></td>
+			<td><a href="sketchbook.html">sketchbook</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/laptop4.gif"></td>
+			<td><a href="journal.html">blog</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/blue_green%20earth%20.gif"></td>
+			<td><a href="https://seamanship.atabook.org/">guestbook</a></td>
+		</tr>
+	</table>
+</nav>
+<!--nav sidebar-->
+ 
+ 
+<main id="wrapper">
+ 
+ <section id="chartroom">
+  <a onclick="turnawn()"><img src="assets/chart/chart%20transp.png" id="chart" title="sitemap"></a>
+  <a onclick="noticetoggle()"><img src="assets/chart/chartmonitor.png" id="monitor" title="links"></a>
+  <a onclick="guestbooktoggle()"><img src="assets/chart/chartnavtex.png" id="navtex"></a>
+  
+ </section>
+ 
+ <!--links-->
+ <section id="notice">
+  <header>= PASSAGE PLAN =</header>
+  <div id="linkz"><ul>
+   <li><a href="index.html">toby's harbour</a></li>
+   <ul>
+    <li><a href="office.html">harbour office</a></li>
+    <li><a href="#">chart room</a></li>
+    <li><a href="links.html">outgoing links</a></li>
+    <li><a href="archive.html">archives</a></li>
+    <li><a href="credits.html">credits</a></li>
+   </ul>
+   <li><a href="sketchbook.html">artwork</a></li>
+   <li><a href="gallery.html">photography</a></li>
+   <ul>
+    <li><a href="media.html">media log</a></li>
+    <li><a href="journal.html">blog</a></li>
+   </ul>
+   <li><a href="seamanship.html">seamanship shrine</a></li>
+   <li><a href="lamento.html">lamento shrine</a></li>
+   <li><a href="ffxiv.html">ffxiv</a> </li>
+   <ul>
+    <li><a href="vergil.html">vergil</a></li>
+    <li><a href="roman.html">roman</a></li>
+   </ul>
+   <li><a href="music.html">music</a></li>
+   <li><a href="cdrack.html">disc collection</a></li>
+  </ul></div>
+  <div id="linkznotice">
+   <img src="assets/chart/pencilawesome2.png" id="pencil" onclick="noticetoggle()">
+   <div class="hiddenscroll">locations around the site are listed here for ease of access. alteratively, the chart can be clicked and the buoyage there interacted with to move around the site.</div>
+  </div>
+ </section>
+ 
+ <!-- guestbook -->
+ <section id="notmar"><br>
+  <iframe
+          id="guestbook"
+          title="guestbook"
+          src="https://seamanship.atabook.org/"
+          ></iframe>
+ </section>
+ 
+ <!-- chart -->
+ <section id="ENC">
+  
+  <div id="chartdisplay"><!--LANDMARKS-->
+  <span class="landmark major" style="top: 20px; left: 338px;transform: rotate(0turn)">Outis Island</span>
+  <span class="landmark major" style="top: 88px; left: 29px;transform: rotate(1turn)">Inglefield<br> Island</span>
+  <span class="landmark major" style="top: 380px; right: 8px;transform: rotate(1turn)">Frede-<br>rick<br> Island</span>
+  <span class="landmark" style="top: 276px; left: 394px;transform: rotate(0turn)">Fujo's<br> Passage</span>
+  <span class="landmark" style="top: 302px; left: 540px;transform: rotate(0turn)">Hare's<br> Passage</span>
+  <span class="landmark major" style="top: 524px; left: 410px;transform: rotate(0turn)">hinks Sound</span>
+  <span class="landmark" style="top: 470px; left: 139px;transform: rotate(0turn)">Archive<br> Island</span>
+   <span class="landmark" style="top: 616px; left: 481px;transform: rotate(0turn)">P-jack island</span>
+  <!--landmarks-->
+  
+  <!--harbour-->
+  <span class="contents buoy" style="top: 121px; left: 310px;">
+   <a href="index.html"><img src="assets/chart/harbourmaster.png"></a>
+   <div class="contentstooltip">
+    <h1>toby's harbour</h1>
+    anchorage
+   </div>
+   <br>
+  </span><!--hbr-->
+  
+  <span class="contents buoy" style="top: 103px; left: 266px;">
+   <a href="office.html"><img src="assets/chart/redpillar.png" style="width:31px;margin-bottom:-3px;"></a>
+   <div class="contentstooltip">
+    <h1>harbour office</h1>
+    harbour information
+   </div>
+   <br><span style="">R</span>
+  </span><!--office-->
+  
+  <span class="contents buoy" style="top: 253px; left: 260px;">
+   <a href="seamanship.html"><img src="assets/chart/lighthouse.png"></a>
+   <div class="contentstooltip">
+    <h1>wheelhouse light</h1>
+    seamanship museum and lighthouse
+   </div>
+   <br><span style="">Fl.W 7s</span>
+  </span><!--lighthouse-->
+   
+  <span class="contents buoy" style="top: 278px; left: 96px;">
+   <a href="credits.html"><img src="assets/chart/wreck.png"></a>
+   <div class="contentstooltip">
+    <h1>credit I wreck</h1>
+    credits page
+   </div>
+    <br><span style="color:darkmagenta">NEW<br>WRECK</span>
+   </span>
+  
+  <span class="contents buoy" style="top: 294px; left: 176px;">
+   <a href="links.html"><img src="assets/chart/cardsouthspar.png" style="width:35px;"></a>
+   <div class="contentstooltip">
+    <h1>link light</h1>
+    outbound links and port registry
+   </div>
+   <br><span style="">YB</span>
+  </span><!--links -->
+  
+  <span class="contents buoy" style="top: 304px; left: 34px;">
+   <a href="journal.html"><img src="assets/chart/cardeastbuoy.png" style="width:30px;"></a>
+   <div class="contentstooltip">
+    <h1>diary cove light</h1>
+    blog and diary page
+   </div>
+   <br><span style="">BYB</span>
+  </span><!--journal-->
+  
+  <span class="contents buoy" style="top: 465px; left: 42px;">
+   <a href="media.html"><img src="assets/chart/greenpillar.png" style="width:27px;margin-bottom:-3px;"></a>
+   <div class="contentstooltip">
+    <h1>media rocks</h1>
+    annual media thread
+   </div>
+   <br><span style="">G</span>
+  </span><!--media-->
+  
+  <span class="contents buoy" style="top: 175px; left: 212px;">
+   <a href="gallery.html"><img src="assets/chart/greenpillar.png"></a>
+   <div class="contentstooltip">
+    <h1>lens island light</h1>
+    photographs
+   </div>
+   <br><span style="">G</span>
+  </span><!--photos-->
+  
+  <span class="contents buoy" style="top: 500px; left: 90px;">
+   <a href="archive.html"><img src="assets/chart/whitepillar.png" style="width:31px;margin-bottom:-3px;"></a>
+   <div class="contentstooltip">
+    <h1>archive point light</h1>
+    archived site wreckage
+   </div><br><span>W</span>
+  </span><!--archives-->
+  
+  <span class="contents buoy" style="top: 354px; left: 292px;">
+   <a href="lamento.html"><img src="assets/chart/whitepillar.png" style="width:34px;margin-bottom:-3px;"></a>
+   <div class="contentstooltip">
+    <h1>lamento island light</h1>
+    catboy island
+   </div>
+   <br><span>W</span>
+  </span><!--lamento-->
+  
+  <span class="contents buoy" style="top: 494px; left: 345px;">
+   <a href="cdrack.html"><img src="assets/chart/redpillar.png" style="width:31px;margin-bottom:-3px;"></a>
+   <div class="contentstooltip">
+    <h1>album rock</h1>
+    disc collection
+   </div>
+   <br><span>R</span>
+  </span><!--albums-->
+  
+  <span class="contents buoy" style="top: 496px; left: 275px;">
+   <a href="music.html"><img src="assets/chart/greenpillar.png"></a>
+   <div class="contentstooltip">
+    <h1>music point</h1>
+    listening radar
+   </div>
+   <br><span style="">G</span>
+  </span><!--music-->
+  
+  <span class="contents buoy" style="top: 105px; left: 575px;">
+   <a href="sketchbook.html"><img src="assets/chart/whitepillar.png" style="width:31px;margin-bottom:-3px;"></a>
+   <div class="contentstooltip">
+    <h1>sketch point light</h1>
+    artwork
+   </div>
+   <br><span style="">W</span>
+  </span><!--art-->
+  
+  <span class="contents buoy" style="top: 126px; left: 520px;">
+   <a href="roman.html"><img src="assets/chart/isoldanger.png" style="width:21px;margin-bottom:-3px;"></a>
+   <div class="contentstooltip">
+    <h1>roman rock</h1>
+    punching bag
+   </div>
+   <br><span style="">BRB</span>
+  </span><!--roman-->
+  
+  <span class="contents buoy" style="top: 312px; left: 623px;">
+   <a href="vergil.html"><img src="assets/chart/harbourmaster.png"></a>
+   <div class="contentstooltip">
+    <h1>vergil cove</h1>
+    vergil's place
+   </div>
+  </span><!--vergil-->
+  
+   <span class="contents buoy" style="top: 370px; left: 518px;">
+   <a href="ffxiv.html"><img src="assets/chart/cardeastspar.png"></a>
+   <div class="contentstooltip">
+    <h1>fantasy point</h1>
+    FFXIV webshrine
+   </div>
+    <br><span style="">BYB</span>
+    <br><span style="color:darkmagenta">NEW<br>BUOY</span>
+   </span><!--FFXIV-->
+  <!--
+  <span class="contents buoy" style="top: 484px; left: 710px;">
+   <a href=""><img src="https://sanji.neocities.org/imageuploads/chartwork/greenpillar.png"></a>
+   <div class="contentstooltip">
+    <h1>placeholder</h1>
+    placeholder text and image
+   </div>
+  </span>-->
+   
+   <!-- parallel ruler-->
+   <a onclick="turnawn()">
+    <img src="assets/chart/rilerlowqualTP.png" id="riler" style=""></a>
+  
+  </div>
+  
+ </section><!--chart-->
+ 
+ </main><!-- wrapper -->
+ 
+ <!-- SCRIPTS -->
+ <!-- TOGGLE ENC DEFAULT ON-->
+ <script>
+function turnawn() {
+  var x = document.getElementById("ENC");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script><!-- src= https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp -->
+ 
+<!-- TOGGLE LINKS DISPLAY-->
+ <script>
+function noticetoggle() {
+  var x = document.getElementById("notice");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script><!-- https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp -->
+ 
+ <!-- TOGGLE LINKS DISPLAY-->
+ <script>
+function guestbooktoggle() {
+  var x = document.getElementById("notmar");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script><!-- https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp -->
+ 
+</body>
+ 
+
+<!-- Mirrored from sanji.neocities.org/sitemap by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:01:07 GMT -->
+</html>

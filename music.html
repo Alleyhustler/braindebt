@@ -1,0 +1,950 @@
+<!doctype html>
+<html lang="en">
+ 
+<!-- Mirrored from sanji.neocities.org/music by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:02:47 GMT -->
+<head>
+  <meta charset="UTF-8" />
+  <title>CD DECK</title>
+  <link rel="shortcut icon" href="gifs%20and%20pngs/lqrOvBt.gif" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&amp;display=swap" rel="stylesheet" />
+
+  <style>
+   body {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: "Nanum Gothic Coding", monospace;
+   }
+
+   .main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 1250px;
+    height: 750px;
+    display: flex;
+    flex-flow: row;
+    gap: 5px;
+    padding: 5px;
+   }
+
+   .leftnav {
+    width: 26em;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid white;
+    padding-right: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+   }
+
+   .sc {
+    padding-top: 3px;
+    padding-bottom: 3px;
+   }
+
+   .rightmain {
+    display: flex;
+    flex-flow: column;
+    gap: 0em;
+    width: 36em;
+    overflow: scroll;
+    overflow-x: hidden;
+   }
+
+   .forum {
+    width: 35em;
+    height: 100%;
+    display: flexbox;
+    flex-flow: column;
+    padding-right: 5px;
+    padding-left: 5px;
+   }
+
+   .title {
+    font-size: 32px;
+    font-weight: 700;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+   }
+
+   .subtitle {
+    text-align: right;
+    font-size: 23px;
+   }
+
+   .description {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.53);
+    margin-bottom: 10px;
+   }
+
+   .align {
+    text-align: left;
+   }
+
+   a {
+    color: coral;
+   }
+   a:hover {
+    color: aquamarine;
+   }
+
+   /*album gallery*/
+   div.gallery {
+    font-size: 17px;
+    margin: 5px;
+    border: 2px solid #ccc;
+    float: left;
+    width: 159px;
+    height: 220px;
+    object-fit: cover;
+   }
+
+   div.gallery:hover {
+    border: 2px solid coral;
+   }
+
+   div.gallery img {
+    width: 100%;
+    height: auto;
+   }
+
+   div.desc {
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+   }
+
+   div.scroll-container {
+    background-color:;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+   }
+
+   div.scroll-container img {
+    padding: 10px;
+    object-fit: cover;
+   }
+  </style>
+ </head>
+
+ <body>
+  <div class="main igborder">
+   <div class="leftnav">
+    <div class="title">Mixes</div>
+    <div class="description">
+     I listen to a lot of music mixes on soundcloud over the course of each month, so I share my monthly favorites here.
+     The autoplay volume for the music player has been lowered.
+    </div>
+    <div class="sc">
+     <span class="subtitle">January</span>
+     <iframe id="sc-widget2" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1909555412"
+      width="100%"
+      height="175"
+      title="psychoangel"></iframe>
+    </div>
+    <div class="sc">
+     <span class="subtitle">September</span>
+     <iframe
+      id="sc-widget1"
+      width="100%"
+      height="175"
+      title="zaphyre"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1223260453&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+    </div>
+   </div>
+
+   <script src="../w.soundcloud.com/player/api.js" type="text/javascript"></script>
+   <!-- soundcloud api -->
+
+   <script type="text/javascript">
+    /*SCRIPT FOR FIRST MIX VOLUME*/
+    (function () {
+     var widgetIframe = document.getElementById("sc-widget1") /*CHANGE*/,
+      widget = SC.Widget(widgetIframe);
+
+     widget.bind(SC.Widget.Events.READY, function () {
+      widget.bind(SC.Widget.Events.PLAY, function () {
+       // get information about currently playing sound
+       widget.getCurrentSound(function (currentSound) {
+        console.log("sound " + currentSound.get("") + "began to play");
+       });
+      });
+      // get current level of volume
+      widget.getVolume(function (volume) {
+       console.log("current volume value is " + volume);
+      });
+      // set new volume level
+      widget.setVolume(5);
+      // get the value of the current position
+     });
+    })();
+   </script>
+   <!-- sc-widget1 -->
+
+   <script type="text/javascript">
+    /*SCRIPT FOR SECOND MIX VOLUME*/
+    (function () {
+     var widgetIframe = document.getElementById("sc-widget2") /*CHANGE*/,
+      widget = SC.Widget(widgetIframe);
+
+     widget.bind(SC.Widget.Events.READY, function () {
+      widget.bind(SC.Widget.Events.PLAY, function () {
+       // get information about currently playing sound
+       widget.getCurrentSound(function (currentSound) {
+        console.log("sound " + currentSound.get("") + "began to play");
+       });
+      });
+      // get current level of volume
+      widget.getVolume(function (volume) {
+       console.log("current volume value is " + volume);
+      });
+      // set new volume level
+      widget.setVolume(5);
+      // get the value of the current position
+     });
+    })();
+   </script>
+   <!-- sc-widget2 -->
+
+   <script type="text/javascript">
+    /*SCRIPT FOR 3RD SC AUDIO VOLUME*/
+    (function () {
+     var widgetIframe = document.getElementById("sc-widget3") /*CHANGE*/,
+      widget = SC.Widget(widgetIframe);
+
+     widget.bind(SC.Widget.Events.READY, function () {
+      widget.bind(SC.Widget.Events.PLAY, function () {
+       // get information about currently playing sound
+       widget.getCurrentSound(function (currentSound) {
+        console.log("sound " + currentSound.get("") + "began to play");
+       });
+      });
+      // get current level of volume
+      widget.getVolume(function (volume) {
+       console.log("current volume value is " + volume);
+      });
+      // set new volume level
+      widget.setVolume(5);
+      // get the value of the current position
+     });
+    })();
+   </script>
+   <!-- sc-widget3 -->
+
+   <script type="text/javascript">
+    /*SCRIPT FOR 4th SC AUDIO VOLUME*/
+    (function () {
+     var widgetIframe = document.getElementById("sc-widget4") /*CHANGE*/,
+      widget = SC.Widget(widgetIframe);
+
+     widget.bind(SC.Widget.Events.READY, function () {
+      widget.bind(SC.Widget.Events.PLAY, function () {
+       // get information about currently playing sound
+       widget.getCurrentSound(function (currentSound) {
+        console.log("sound " + currentSound.get("") + "began to play");
+       });
+      });
+      // get current level of volume
+      widget.getVolume(function (volume) {
+       console.log("current volume value is " + volume);
+      });
+      // set new volume level
+      widget.setVolume(5);
+      // get the value of the current position
+     });
+    })();
+   </script>
+   <!-- sc-widget4 -->
+
+   <script type="text/javascript">
+    /*SCRIPT FOR 5th SC AUDIO VOLUME*/
+    (function () {
+     var widgetIframe = document.getElementById("sc-widget5") /*CHANGE*/,
+      widget = SC.Widget(widgetIframe);
+
+     widget.bind(SC.Widget.Events.READY, function () {
+      widget.bind(SC.Widget.Events.PLAY, function () {
+       // get information about currently playing sound
+       widget.getCurrentSound(function (currentSound) {
+        console.log("sound " + currentSound.get("") + "began to play");
+       });
+      });
+      // get current level of volume
+      widget.getVolume(function (volume) {
+       console.log("current volume value is " + volume);
+      });
+      // set new volume level
+      widget.setVolume(5);
+      // get the value of the current position
+     });
+    })();
+   </script>
+   <!-- sc-widget6 -->
+
+   <script type="text/javascript">
+    /*SCRIPT FOR 5th SC AUDIO VOLUME*/
+    (function () {
+     var widgetIframe = document.getElementById("sc-widget6") /*CHANGE*/,
+      widget = SC.Widget(widgetIframe);
+
+     widget.bind(SC.Widget.Events.READY, function () {
+      widget.bind(SC.Widget.Events.PLAY, function () {
+       // get information about currently playing sound
+       widget.getCurrentSound(function (currentSound) {
+        console.log("sound " + currentSound.get("") + "began to play");
+       });
+      });
+      // get current level of volume
+      widget.getVolume(function (volume) {
+       console.log("current volume value is " + volume);
+      });
+      // set new volume level
+      widget.setVolume(5);
+      // get the value of the current position
+     });
+    })();
+   </script>
+   <!-- sc-widget6 -->
+   
+   <script type="text/javascript">
+    /*SCRIPT FOR 7th SC AUDIO VOLUME*/
+    (function () {
+     var widgetIframe = document.getElementById("sc-widget7") /*CHANGE*/,
+      widget = SC.Widget(widgetIframe);
+
+     widget.bind(SC.Widget.Events.READY, function () {
+      widget.bind(SC.Widget.Events.PLAY, function () {
+       // get information about currently playing sound
+       widget.getCurrentSound(function (currentSound) {
+        console.log("sound " + currentSound.get("") + "began to play");
+       });
+      });
+      // get current level of volume
+      widget.getVolume(function (volume) {
+       console.log("current volume value is " + volume);
+      });
+      // set new volume level
+      widget.setVolume(5);
+      // get the value of the current position
+     });
+    })();
+   </script>
+   <!-- sc-widget7 -->
+
+   <div class="rightmain">
+    <div class="title">Albums</div>
+    <div class="forum">
+     <div class="description">
+      Albums that I enjoy. A mixed bag of various genres. I like jungle, digital hardcore and atmospheric drum and bass
+      music but listen to anything.
+     </div>
+     <div class="albums">
+      
+      <div class="gallery">
+       <a target="_blank" href="https://modestbydefault.bandcamp.com/album/permaculture">
+        <img src="imageuploads/a4170550792_10.jpg" alt="modest by default" width="600" height="400" />
+       </a>
+       <div class="desc">permaculture</div>
+      </div>
+      <!-- permaculture -->
+      
+      <div class="gallery">
+       <a target="_blank" href="https://xiuxiu.bandcamp.com/album/plays-the-music-of-twin-peaks">
+        <img src="imageuploads/a3629766157_10.jpg" alt="xiuxiu" width="600" height="400" />
+       </a>
+       <div class="desc">plays the music of twin peaks</div>
+      </div>
+      <!-- xiuxiu twin peaks-->
+      
+      <div class="gallery">
+       <a target="_blank" href="https://fadarecords.bandcamp.com/album/slime-patrol-2">
+        <img
+         src="imageuploads/a2796182748_16.jpg"
+         alt="khadija al hanafi"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">slime patrol 2</div>
+      </div>
+      <!--  slime patrol 2  -->
+
+      <div class="gallery">
+       <a
+        target="https://sanji.neocities.org/imageuploads/a0550757914_16.jpg"
+        href="https://kaizoslumber.bandcamp.com/album/kaizo-demos-vol-4-rose-gold-poison">
+        <img
+         src="imageuploads/a0550757914_16.jpg"
+         alt="kaizo demos 4"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">kaizo slumber demos. vol 4</div>
+      </div>
+      <!--  kaizo demos 4  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://femtanyl.bandcamp.com/album/chaser">
+        <img
+         src="imageuploads/a1434684100_16.jpg"
+         alt="femtanyl"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">chaser</div>
+      </div>
+      <!-- chaser -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://bye2.bandcamp.com/album/metamorphose">
+        <img
+         src="imageuploads/a2793754674_16.jpg"
+         alt="metamorphose"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">metamorphose</div>
+      </div>
+      <!--  metamorphose  -->
+
+      <div class="gallery" style="">
+       <a target="_blank" href="https://dismissyourself.bandcamp.com/album/tummyache">
+        <img
+         src="imageuploads/tummyache.jpg"
+         alt="tummyache kaizo slumber"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">tummyache</div>
+      </div>
+      <!-- tummyache -->
+
+      <div class="gallery">
+       <a
+        target="_blank"
+        href="https://djwndwshppng.bandcamp.com/album/mysterio-legacy-collection-unseen-unheard-underrated-and-unhinged">
+        <img
+         src="imageuploads/a3528599677_10.jpg"
+         alt="mysterio collection"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">mysterio legacy collection</div>
+      </div>
+      <!--  mysterio legacy  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://slashpattern.bandcamp.com/album/vampire-patterns">
+        <img
+         src="imageuploads/a1726988748_10.jpg"
+         alt="slashpatterns"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">vampire patterns</div>
+      </div>
+      <!-- vampire patterns -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://nanoray.bandcamp.com/album/nurse-2">
+        <img src="imageuploads/a2465428114_10.jpg" alt="nurse 2" width="600" height="400" />
+       </a>
+       <div class="desc">nurse 2</div>
+      </div>
+      <!--  nurse 2  -->
+
+      <div class="gallery">
+       <a target="_blank" href="fromjoy.html">
+        <img src="imageuploads/a3724884507_10.jpg" alt="fromjoy" width="600" height="400" />
+       </a>
+       <div class="desc">away</div>
+      </div>
+      <!-- away -->
+
+      <div class="gallery">
+       <a
+        target="_blank"
+        href="https://machinegirl.bandcamp.com/album/super-freq-ep?from=search&amp;search_item_id=3999761524&amp;search_item_type=a&amp;search_match_part=%3F&amp;search_page_id=3565799535&amp;search_page_no=1&amp;search_rank=1&amp;search_sig=e25f3efb2b508659ff27d7b38895156e">
+        <img
+         src="imageuploads/a1572558368_10.jpg"
+         alt="machinegirl superfreq"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">super freq EP</div>
+      </div>
+      <!--  superfreq  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://normcorps.bandcamp.com/album/nu-age-of-fuckshit">
+        <img
+         src="imageuploads/a2098973789_10.jpg"
+         alt="normcorps"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">nu age of fuckshit</div>
+      </div>
+      <!-- nu age of fuckshit -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://strxwberrymilk.bandcamp.com/album/gaia">
+        <img src="imageuploads/a3922365124_10.jpg" alt="gaia" width="600" height="400" />
+       </a>
+       <div class="desc">gaia</div>
+      </div>
+      <!--  gaia  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://machinegirl.bandcamp.com/album/mg-demo-disc">
+        <img
+         src="imageuploads/a1210504396_10.jpg"
+         alt="mg demo disc"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">mg demo disc</div>
+      </div>
+      <!--  mg demo disc  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://djwndwshppng.bandcamp.com/album/ethereal-plane-large-body-of-water">
+        <img
+         src="imageuploads/ab67616d0000b27393be34f5ecf966186338c572.jpg"
+         alt="windowshopping"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">ethereal plane</div>
+      </div>
+      <!--  etherean plane  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://gargoyl3.bandcamp.com/album/sc-demo-ep">
+        <img
+         src="imageuploads/a0377667372_10.jpg"
+         alt="sc demo ep"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">sc demo EP</div>
+      </div>
+      <!--  sc demo EP  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://dismissyourself.bandcamp.com/album/beef">
+        <img src="imageuploads/a3936173779_10.jpg" alt="beef" width="600" height="400" />
+       </a>
+       <div class="desc">beef</div>
+      </div>
+      <!--  beef  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://machinegirl.bandcamp.com/album/reporpoised-phantasies">
+        <img
+         src="imageuploads/a2112639701_10.jpg"
+         alt="reporpoised phantasies"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">reporpoised phantasies</div>
+      </div>
+      <!--  reporpoised phantasies  -->
+      
+      <div class="gallery">
+       <a target="_blank" href="https://shriek.bandcamp.com/album/playonline">
+        <img src="imageuploads/a2235006138_10.jpg" alt="shriek" width="600" height="400" />
+       </a>
+       <div class="desc">playonline</div>
+      </div>
+      <!-- playonline -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://5002seven.bandcamp.com/album/cyber-gettotek-2218-bc-edition">
+        <img
+         src="imageuploads/a0275805903_10.jpg"
+         alt="cyber ghettotek 2218"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">cybergettotek 2218</div>
+      </div>
+      <!--  cybergettotek2218  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://eyes-lit.bandcamp.com/album/waster">
+        <img src="imageuploads/a0082119711_16.jpg" alt="waster" width="600" height="400" />
+       </a>
+       <div class="desc">waster!!</div>
+      </div>
+      <!--  waster!!  -->
+
+      <div class="gallery" style="">
+       <a target="_blank" href="https://undernet.bandcamp.com/album/under-net-compilation-disc-21-euphoria">
+        <img
+         src="imageuploads/underneteuphoria.jpg"
+         alt="under.net comp"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">under.net compilation 2.1</div>
+      </div>
+      <!-- under.net compilation -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://hopper1000.bandcamp.com/album/real-jungle">
+        <img
+         src="imageuploads/a2178207386_10.jpg"
+         alt="real jungle"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">real jungle</div>
+      </div>
+      <!--  real jungle  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://soundcloud.com/priz-tats/sets/dv-i-aurora-memoria">
+        <img
+         src="imageuploads/artworks-000130606826-odba42-t500x500.jpg"
+         alt="aurora memoria"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">aurora memoria</div>
+      </div>
+      <!--  aurora memoria  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://djwndwshppng.bandcamp.com/album/as-above-so-below-ep">
+        <img
+         src="imageuploads/a4076955426_16.jpg"
+         alt="as above so below"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">as above so below EP</div>
+      </div>
+      <!--  as above so below  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://kaizoslumber.bandcamp.com/album/the-kaizo-manifesto">
+        <img
+         src="imageuploads/a2323410766_10.jpg"
+         alt="kaizo manifesto"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">the kaizo manifesto</div>
+      </div>
+      <!--  kaizo manifesto  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://accelio.bandcamp.com/album/metropolis">
+        <img src="imageuploads/a3136884043_10.jpg" alt="accelio" width="600" height="400" />
+       </a>
+       <div class="desc">metropolis</div>
+      </div>
+      <!--  metropolis  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://bye2.bandcamp.com/album/teeth-restoration">
+        <img
+         src="imageuploads/teethresto.html"
+         alt="teeth restoration"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">teeth restoration</div>
+      </div>
+      <!--  tooth restoration  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://dv-i.bandcamp.com/album/re-connect">
+        <img src="../f4.bcbits.com/img/a3472963356_10.jpg" alt="dv-i" width="600" height="400" />
+       </a>
+       <div class="desc">re:connect</div>
+      </div>
+      <!--  re connect  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://digimechanoid.bandcamp.com/album/in-the-machine">
+        <img src="../f4.bcbits.com/img/a0195238805_10.jpg" alt="digimechanoid" width="600" height="400" />
+       </a>
+       <div class="desc">in the machine</div>
+      </div>
+      <!--  in the machine  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://dontlookatmyface.bandcamp.com/album/theartofoldvisualnovelgames">
+        <img
+         src="imageuploads/a0182974243_10.jpg"
+         alt="dontlookatmyface"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">theartofold visualnovelgames</div>
+      </div>
+      <!--  theartofoldVNgames  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://machinegirl.bandcamp.com/album/phantom-tracks">
+        <img
+         src="imageuploads/a0048120119_10.jpg"
+         alt="mg phantomtracks"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">phantom tracks</div>
+      </div>
+      <!--  phantom tracks  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://www.youtube.com/watch?v=GP6F0y3eU0Q">
+        <img
+         src="imageuploads/TheProdigy-TheFatOfTheLand.jpg"
+         alt="fat of the land"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">the fat of the land</div>
+      </div>
+      <!--  fat of the land  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://undernet.bandcamp.com/album/under-net-compilation-disc-23-distinction">
+        <img
+         src="imageuploads/a0852174185_16.jpg"
+         alt="undernet comp"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">under.net compilation 2.3</div>
+      </div>
+      <!--  under.net compilation  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://omnitrio.bandcamp.com/album/rogue-satellite">
+        <img
+         src="imageuploads/R-340724-1098847006.jpg"
+         alt="omnitrio"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">rogue satellite</div>
+      </div>
+      <!--  rogue satellite  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://limppumpo.bandcamp.com/album/limp-pumpo-full-discography">
+        <img
+         src="imageuploads/a1709155493_10.jpg"
+         alt="limpumpo"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">limp pumpo discography</div>
+      </div>
+      <!-- limp pumpo discog -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://randsrecords.bandcamp.com/album/selected-works-94-96-2">
+        <img
+         src="imageuploads/a2263053517_65.jpg"
+         alt="selected works 9496"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">selected works 94-96</div>
+      </div>
+      <!--  selected works 94-96  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://humanpart.bandcamp.com/album/ziptape">
+        <img src="imageuploads/a2504540839_10.jpg" alt="ziptape" width="600" height="400" />
+       </a>
+       <div class="desc">.ziptape</div>
+      </div>
+      <!--  .ziptape  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://aphextwin.bandcamp.com/album/syro">
+        <img
+         src="imageuploads/a2665747684_16.jpg"
+         alt="aphextwin"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">syro</div>
+      </div>
+      <!--  syro  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://madbreaks.bandcamp.com/album/operation-cybergoon">
+        <img
+         src="imageuploads/a1541944526_16.jpg"
+         alt="madbreaks"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">operation cybergoon</div>
+      </div>
+      <!--  operation cybergoon  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://downhill.bandcamp.com/album/dh-legacy-edition">
+        <img src="imageuploads/a2876119272_16.jpg" alt="dh2k" width="600" height="400" />
+       </a>
+       <div class="desc">DH legacy edition</div>
+      </div>
+      <!--  dhlegacy  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://kaizoslumber.bandcamp.com/album/how-are-we-feeling-today">
+        <img src="imageuploads/a3888305892_10.jpg" alt="/" width="600" height="400" />
+       </a>
+       <div class="desc">how are we feeling today?</div>
+      </div>
+      <!-- how are we feeling -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://fadarecords.bandcamp.com/album/slime-patrol">
+        <img
+         src="imageuploads/a4152673887_10.jpg"
+         alt="slime patrol"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">slime patrol</div>
+      </div>
+      <!--  slime patrol  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://apollorecords.bandcamp.com/album/selected-ambient-works-85-92">
+        <img
+         src="imageuploads/a1573754732_10.jpg"
+         alt="aphextwin"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">selected ambient works</div>
+      </div>
+      <!--  selected ambient works  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://dismissyourself.bandcamp.com/album/miracle-in-transit">
+        <img
+         src="imageuploads/a0324005383_10.jpg"
+         alt="nakedflames"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">miracle in transit</div>
+      </div>
+      <!-- miracle in transit -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://madbreaks.bandcamp.com/album/jersey-season">
+        <img src="imageuploads/a4251747602_10.jpg" alt="andypls" width="600" height="400" />
+       </a>
+       <div class="desc">jersey season</div>
+      </div>
+      <!--  jersey season  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://neupink.bandcamp.com/album/seaweed-jesus">
+        <img src="imageuploads/a3579614414_16.jpg" alt="NEUPINK" width="600" height="400" />
+       </a>
+       <div class="desc">seaweed jesus</div>
+      </div>
+      <!--  seaweed jesus  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://plantasiarecords.bandcamp.com/album/ceto">
+        <img src="imageuploads/a3455857129_16.jpg" alt="NANORAY" width="600" height="400" />
+       </a>
+       <div class="desc">ceto</div>
+      </div>
+      <!--  ceto  -->
+
+      <div class="gallery">
+       <a
+        target="_blank"
+        href="https://scumtapes.bandcamp.com/album/the-many-faces-of-filth-iii-pantheon-of-worldwide-ruin-scumtapes-halloween-compilation-2022">
+        <img
+         src="imageuploads/a1269543202_16.jpg"
+         alt="scumtapes"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">pantheon of worldwide ruin</div>
+      </div>
+      <!--  panthon of worldwide  ruin  -->
+
+      <div class="gallery">
+       <a
+        target="_blank"
+        href="https://scumtapes.bandcamp.com/album/the-many-faces-of-filth-iv-close-encounters-of-the-hurt-kind-scumtapes-halloween-compilation-2023">
+        <img
+         src="imageuploads/a3736732632_16.jpg"
+         alt="scumtapes"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">close encounters of the hurt kind</div>
+      </div>
+      <!--  close encounters of the hurt kind  -->
+
+      <div class="gallery">
+       <a target="_blank" href="https://www.youtube.com/watch?v=HSggRvPV2mA">
+        <img
+         src="imageuploads/R-9811-1608024799-9119.jpg"
+         alt="omnitrio"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">haunted science</div>
+      </div>
+      <!-- haunted science -->
+
+      <div class="gallery" style="">
+       <a target="_blank" href="https://djangelfyre.bandcamp.com/album/incomplete-transmissions">
+        <img
+         src="imageuploads/incompletetransmissions.jpg"
+         alt="incomplete transmissions djangelfyre"
+         width="600"
+         height="400" />
+       </a>
+       <div class="desc">incomplete transmissions</div>
+      </div>
+      <!-- incomplete transmissions -->
+      
+      <div class="gallery">
+       <a target="_blank" href="https://iglooghost.bandcamp.com/album/tidal-memory-exo">
+        <img src="imageuploads/a2121346445_10.jpg" alt="iglooghost" width="600" height="400" />
+       </a>
+       <div class="desc">tidal memory exo</div>
+      </div>
+      <!-- tidal memory -->
+
+      <!-- FORMAT
+      <div class="gallery">
+       <a target="_blank" href="/">
+        <img src="/" alt="/" width="600" height="400" />
+       </a>
+       <div class="desc">/</div>
+      </div>
+       -->
+     </div>
+     <!--end of div for albums gallery -->
+    </div>
+   </div>
+  </div>
+  <div style="text-align: center"><a href="index.html">back to mainsite</a></div>
+ </body>
+
+<!-- Mirrored from sanji.neocities.org/music by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:03:10 GMT -->
+</html>

@@ -1,0 +1,84 @@
+:root {
+ --night: #0b101f;
+ --day: aliceblue;
+ --noon: #120ac5;
+ --fog: rgba(255, 255, 255, 0.3);
+ --loom: rgba(0, 0, 0, 0.3);
+ --algae: #76c676;
+}
+
+body {
+ background-color: var(--loom);
+ font-family: monospace;
+ font-size: 15px;
+ color: var(--day);
+}
+
+h1 {
+font-size: 30px;
+}
+
+h2 {
+ font-size: 25px;
+}
+
+h3 {
+ margin-top: 5px;
+ margin-bottom: 5px;
+}
+
+h4 {
+ margin-top: 10px;
+ margin-bottom: 15px;
+}
+
+a {
+ color: var(--algae);
+ text-decoration: none; 
+}
+a:hover {
+ color: var(--noon);
+}
+
+.indent {
+ border-left: 4px solid rgba(255, 255, 255, 0.5);
+ padding-left: 10px;
+ margin-left: 10px;
+}
+
+.tiny { font-size: 10px; }
+
+.book { list-style-image: url(assets/pixels/book12.gif); }
+
+.mt { 
+ list-style: none;
+ margin-left: -20px;
+}
+.spaceme {
+ margin:15px;
+}
+
+.gallery img { width:600px; }
+
+/*generic flexbox classes*/
+.row {
+ display: flex;
+ flex-direction: row;
+}
+.column {
+ display: flex;
+ flex-direction: column;
+}
+
+/*overflow scroll*/
+.scroll {
+ overflow: scroll;
+ overflow-x: hidden;
+}
+.hiddenscroll {
+ overflow:scroll;
+	overflow-x:hidden;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+

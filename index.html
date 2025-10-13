@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from sanji.neocities.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:00:51 GMT -->
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Brain Debt</title>
+ <link rel="stylesheet" href="dock.css" /> <!--DO NOT FORGET TO CHECK THIS LINK !!!-->
+ <link rel="shortcut icon" href="assets/graphics/anchor.gif" />
+ 
+ <!--fonts--><link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+
+ <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap" rel="stylesheet">
+  <!-- font-family: "Averia Libre", system-ui; -->
+
+<style>
+ 
+ body {
+  background-image: url(assets/princwill.png);
+  background-size: contain;
+  background-color: rgb(0, 0, 0); 
+  color: var(--day);
+ }
+ 
+ #wrapper {
+  margin: 20px auto 10px auto;
+  width: 800px;
+  height: 1000px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 6px double var(--fog);
+ }
+ 
+ /*title*/
+ #mast {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 97vw;
+  font-size: 27px;
+  font-family: "Averia Libre", system-ui;
+  filter: drop-shadow(2px 2px 1px black) drop-shadow(-2px -2px 1px black);
+ }
+ #skiff {
+  height: 26px;
+  float: right;
+ }
+ 
+ /*header*/
+ #bow {
+  background-image: url(assets/tankerseabridge.png);
+  background-position-y: -200px;
+  background-position-x: 0px;
+  height: 170px;
+  padding: 10px 0px 10px 10px;
+  align-content: flex-end;
+ }
+ 
+ /*midsection*/
+ #midship {
+  height: 400px;
+  justify-content: space-between;
+ }
+ 
+ /*middle left*/
+ #porthole {
+  position: relative;
+  margin: 25px 20px 15px 30px;
+  width: 288px;
+  background-image: url(assets/Tongass_National_Forest_20.png);
+  background-size: 288px;
+  -webkit-box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.3), 0px 0px 20px 10px rgba(0, 0, 0, 0.3); 
+  box-shadow: inset 0px 42px 20px 30px rgba(0, 0, 0, 0.3), 0px 0px 20px 10px rgba(255, 255, 255, 0.3);
+  border: 4px double var(--fog);
+ }
+ #sightseeing {
+  margin: auto 0px 0px 0px;
+  padding: 5px 0px 5px 0px;
+  border-top: inherit;
+  text-align: center;
+ }
+ #porthole ul li {
+  
+ }
+ 
+ /*right side divider*/
+ #midship .starboard {
+  width: 450px;
+  border-left: 4px double var(--fog);
+ }
+ 
+ /*middle right column*/
+ #status {
+  width: ;
+  height: 110px;
+  margin: 0px 0px 0px 0px;
+  padding: 25px 0px 0px 10px;
+  border-top: 4px double var(--fog);
+  background-image: url(assets/graphics/animehurr.gif);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 6px;
+  text-align: center;
+  font-size: 17px;
+  filter: drop-shadow(-1px -1px 0px black) drop-shadow(1px 1px 0px black);
+ }
+ .maint {
+  height: 110px;
+ }
+ .icon {
+  filter: hue-rotate(92deg);
+  height: 15px;
+ }
+ 
+ /*bottom section*/
+ #stern {
+  height: 400px;
+  justify-content: space-between;
+ }
+ #stern .port {
+  width: 490px;
+ }
+ 
+ /* NEW STYLES FOR BANNER SECTION */
+ #brain-debt-banner {
+   width: 100%;
+   height: 150px;
+   background-image: url('assets/brain-debt-banner.png'); /* Replace with your actual PNG path */
+   background-size: cover;
+   background-position: center;
+   border: 4px double var(--fog);
+   margin-bottom: 15px;
+   position: relative;
+   overflow: hidden;
+ }
+ 
+ #brain-debt-info {
+   padding: 15px;
+   background-color: rgba(0, 0, 0, 0.5);
+   border: 2px solid var(--fog);
+   font-family: "Averia Libre", system-ui;
+   font-size: 14px;
+   line-height: 1.4;
+   height: 200px;
+   overflow-y: auto;
+ }
+ 
+ #brain-debt-info h3 {
+   font-family: "Bungee Shade", sans-serif;
+   margin-top: 0;
+   margin-bottom: 10px;
+   font-size: 18px;
+   text-align: center;
+ }
+ 
+ #tools {
+  width: 450px;
+  height: 330px;
+  margin: 15px auto 0px auto;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url();
+  background-size: 900px;
+  background-position-x: -150px;
+  background-position-y: -170px;
+  border: 4px double var(--fog);
+ }
+ #sextant {
+  top:10px; left:-10px;
+ }
+ #compass {
+  top: 50px; left:240px
+ }
+ #dividers {
+  top: 25px; left: 355px;
+ }
+ #hourglass {
+  top: 185px; left: 10px;
+ }
+ #spyglass {
+  top: 260px; left: 120px; margin-top: -30px;
+ }
+ #magglass {
+  top: 160px; left: 180px;
+ }
+ 
+ #radio {
+  margin: 0px 0px 0px 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+ }
+ #radio iframe {
+  border: none;
+ }
+ 
+ #chain {
+  width: 300px;
+  margin: 0px auto 20px auto;
+  text-align: center;
+ }
+ 
+ #anchor {
+  position: fixed;
+  bottom: 2px;
+  right: 10px;
+ }
+ 
+ /*subtitles*/
+ .subtitle {
+  font-family: "Bungee Shade", sans-serif;
+  font-weight: 500;
+  text-align: left;
+  font-size: 25px;
+  margin: 7px 5px 7px 0px;
+  filter: drop-shadow(-1px -1px 0px black) drop-shadow(1px 1px 0px black);
+ }
+ 
+ .mini {
+  height: 26px;
+  filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.5)) 
+ }
+ 
+ /*dividing lines*/
+ .divider {
+  border-bottom: 4px double var(--fog);
+ }
+ 
+ /*nav icons*/
+ .graphic {
+  position: absolute;
+  z-index: 5;
+ }
+ 
+ /*ribose css hover*/
+ /* src= */
+ .imgtxt {
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+ }
+ .imgtxt span {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  font-size: 1.5rem;
+  color: #fff;
+  filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black) drop-shadow(1px -1px 0 black)
+   drop-shadow(-1px -1px 0 black);
+ }
+ .imgtxt img {
+  filter: drop-shadow(1px 1px 1px #000000) drop-shadow(-1px -1px 1px #000000) drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.5)) drop-shadow(-1px -1px 1px rgba(255, 255, 255, 0.5))  ;
+ }
+ .imgtxt:hover span,
+ .imgtxt:focus span {
+  opacity: 1;
+ }
+ .imgtxt:hover img,
+ .imgtxt:focus img {
+  /* add hover effects like transform or filter to your images here! */
+  transform: rotate(0.01turn);
+ }
+ 
+ /*Falling image start*/
+ /* src= https://obby.dog/test-CSS/toys1 */
+@-webkit-keyframes img-fall {
+  0% {
+    top: 10%;
+  }
+  100% {
+    top: 100%;
+	}
+}
+@-webkit-keyframes img-shake {
+	0%,
+	70% {
+	  -webkit-transform: translateX(0);
+	  transform: translateX(0)
+	}
+	50% {
+	  -webkit-transform: translateX(60px);
+	  transform: translateX(80px)
+	}
+}
+@keyframes img-fall {
+	0% {
+	top: 0%
+	}
+	100% {
+	top: 95%
+	}
+}
+@keyframes img-shake {
+	0%,
+	100% {
+	transform: translateX(0)
+	}
+	50% {
+	transform: translateX(80px)
+	}
+}
+ 
+.falling-img-container {
+  width: 300px;
+  height: 250px;
+}
+.fall {
+	position: absolute;
+	top: 0%;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-animation-name: img-fall, img-shake;
+	-webkit-animation-duration: 10s, 3s;
+	-webkit-animation-timing-function: linear, ease-in-out;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-play-state: running, running;
+	animation-name: img-fall, img-shake;
+	animation-duration: 10s, 3s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	animation-play-state: running, running;
+	z-index:0;
+}
+.fall:nth-of-type(0) {
+	left: 1%;
+	-webkit-animation-delay: 0s, 0s;
+	animation-delay: 0s, 0s
+}
+.fall:nth-of-type(1) {
+	left: 10%;
+	-webkit-animation-delay: 1s, 1s;
+	animation-delay: 1s, 1s
+}
+.fall:nth-of-type(2) {
+	left: 20%;
+	-webkit-animation-delay: 6s, .5s;
+	animation-delay: 6s, .5s
+}
+.fall:nth-of-type(3) {
+	left: 30%;
+	-webkit-animation-delay: 4s, 2s;
+	animation-delay: 4s, 2s
+}	
+.fall:nth-of-type(4) {
+	left: 40%;
+	-webkit-animation-delay: 2s, 2s;
+	animation-delay: 2s, 2s
+}
+.fall:nth-of-type(5) {
+	left: 50%;
+	-webkit-animation-delay: 8s, 3s;
+	animation-delay: 8s, 3s
+}
+.fall:nth-of-type(6) {
+	left: 60%;
+	-webkit-animation-delay: 6s, 2s;
+	animation-delay: 6s, 2s
+}
+.fall:nth-of-type(7) {
+	left: 70%;
+	-webkit-animation-delay: 2.5s, 1s;
+	animation-delay: 2.5s, 1s
+}
+.falle:nth-of-type(10) {
+	left: 25%;
+	-webkit-animation-delay: 2s, 0s;
+	animation-delay: 2s, 0s
+}
+.fall:nth-of-type(11) {
+	left: 65%;
+	-webkit-animation-delay: 4s, 2.5s;
+	animation-delay: 4s, 2.5s
+}
+.fall:nth-of-type(12) {
+	left: 45%;
+	-webkit-animation-delay: 9s, 2.5s;
+	animation-delay: 4s, 2.5s
+}
+/*Falling image end*/
+ 
+ #chattable {
+  height: 350px;
+ }
+
+ 
+ /*links*/
+ a {
+ }
+ a:hover {
+ }
+ 
+ /*hidden on mobile*/
+ .mobile {
+  
+ }
+ 
+ /*mobile adjustments*/
+ @media only screen and (max-width: 620px) {
+  .mobile { display: none; }
+  #wrapper { width: 95vw; height: 1310px; margin: 20px auto 50px auto; }
+  #midship .starboard { width: 100% }
+  #midship { height: auto;}
+  .maint { display: none; }
+  #stern { display: flex; flex-direction: column; }
+  .imgtxt span { opacity: 1; }
+  #stern .port { width: 100%; }
+  #navsubtitle { border-bottom: 4px double var(--fog); order: 1; }
+  #tools { order: 2; width: 80vw; height: 450px; }
+  #tools img { transform: ; }
+  #sextant {
+  top:8px; left:16px;
+  }
+ #compass {
+  top: 181px; left:247px
+ }
+ #dividers {
+  top: 12px; left: 255px;
+ }
+ #hourglass {
+  top: 192px; left: 35px;
+ }
+ #spyglass {
+  top: 377px; left: 22px; margin-top: -30px;
+ }
+ #magglass {
+  top: 280px; left: 140px;
+ }
+  /* Mobile adjustments for new banner section */
+  #brain-debt-banner {
+    height: 120px;
+  }
+  #brain-debt-info {
+    height: 180px;
+    font-size: 13px;
+  }
+ }
+
+</style>
+ 
+<script src="../iframe.chat/scripts/main.min.js"></script>
+ 
+</head>
+
+<body>
+ 
+ <!--title-->
+ <div id="mast">
+  <span>Brain Debt szn </span>
+  <img src="assets/graphics/animated-ship-image-0001.gif" id="skiff">
+ </div><!--title-->
+ <!--container-->
+ <main id="wrapper" class="column">
+  <section id="bow" class="divider"><b>This is all beyond normal understanding, all facts, underlines, gossips are brain debt wise</b></section>
+  <!--middle-->
+  <section id="midship" class="row divider">
+   <!--left side-->
+   <div id="porthole" class="column mobile">
+    <!-- src= https://obby.dog/test-CSS/toys1 <33 certified css wizard -->
+    <div class="falling-img-container">
+    <!-- can replace text with images too..... -->
+    <div class="fall">+</div>
+    <div class="fall">+</div>
+    <div class="fall">+</div>
+    <div class="fall">+</div>
+    <div class="fall">+</div>
+    <div class="fall">+</div>
+    <div class="fall">+</div>
+    <div class="fall">+</div>
+    </div><!--falling images-->
+    <div id="sightseeing">live <i>authentically</i> at all costs</div>
+   </div><!--left-->
+   <!--right side-->
+   <div class="column starboard">
+    <div class="subtitle" style="text-align: right"> <img src="assets/graphics/buoy_bob.gif" class="mini" style="height: 35px; margin-bottom: -9px;"> YOUR BRAIN IS IN DEBT</div>
+
+    <!--changelog-->
+    <section id="" class="scroll maint divider">
+     <ul class= class="icon"> Lore
+      <li>Every cycle leaves a new kind of wreckage  not just financial, but mental.
+Brain Debt was born from the overleveraged thoughts of traders who kept buying "the dip" until their cognition defaulted.
+
+Now the market operates on borrowed neurons.
+Ideas are collateral. Sanity is a token.
+The collective trench mind runs a deficit it can't repay — but still trades like it can.
+
+Some call it madness.
+We call it Brain Debt.
+Because the only way out is to think less and press more. 
+
+      </ul>
+    </section><!--changelog-->
+    <!--to do list-->
+    <section id="" class="scroll maint">
+     <ul class="mt"><img src="assets/pixels/icon1.gif" class="icon"> szn of dumb
+      <li>We've overtraded dopamine, overleveraged focus, and defaulted on reason.
+Welcome to Brain Debt.
+The only currency left is delusion  and we're printing it daily.</li>
+     </ul>
+    </section><!--to do list-->
+   </div><!--right-->
+  </section><!--middle-->
+  <!--bottom-->
+  <section id="stern" class="row">
+   <!-- NEW BANNER AND INFO SECTION -->
+   <div class="column port">
+     <div id="brain-debt-banner"></div>
+     <div id="brain-debt-info">
+       <h3>About Brain Debt</h3>
+       <p>Brain Debt represents the cognitive deficit accumulated when we overtrade our mental resources in pursuit of market gains. It's the psychological toll of constantly chasing alpha in volatile markets.</p>
+       <p>When your brain is in debt, every decision carries interest. The more you borrow from your future self to make present trades, the deeper the cognitive deficit grows.</p>
+       <p>This isn't just about financial leverage - it's about mental leverage. How much focus can you borrow? How much sanity can you collateralize? Brain Debt is the currency of the overtraded mind.</p>
+     </div>
+   </div>
+   
+   <!--chatroom-->
+   <div id="radio" class="column starboard">
+    <script>
+    chattable.initialize({
+        stylesheet: "chattable.css" 
+    });
+   </script>
+    <iframe src="https://iframe.chat/embed?chat=gmdssradio" id="chattable"></iframe>
+   </div><!--chat-->
+  </section><!--bottom-->
+ </main><!--container-->
+ <div id="chain" class="mobile">est. TRENCHES</div>
+ <div id="anchor" class="mobile">
+  <!-- FC2 Counter  Starts here -->
+  <script language="javascript" type="text/javascript" src="https://x.com/BrainDebt" /></noscript>
+  <!-- FC2 Counter  Ends here -->
+ </div>
+
+</body>
+
+
+<!-- Mirrored from sanji.neocities.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:00:56 GMT -->
+</html>

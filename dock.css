@@ -1,0 +1,52 @@
+:root {
+ --night: #0b101f;
+ --day: #f8fcff;
+ --noon: #120ac5;
+ --fog: rgba(255, 255, 255, 0.3);
+ --loom: rgba(0, 0, 0, 0.3);
+ --algae: #76c676;
+}
+
+@font-face {
+  font-family: SperryPC;
+  src: url("Ac437_SperryPC_8x16.ttf") format("ttf");
+  font-weight: normal;
+ }
+
+body {
+ color: var(--noon);
+ font-family: "Times New Roman", Times, serif;
+ font-size: 16px;
+}
+
+/*generic flexbox classes*/
+.row {
+ display: flex;
+ flex-direction: row;
+}
+.column {
+ display: flex;
+ flex-direction: column;
+}
+
+/*overflow scroll*/
+.scroll {
+ overflow: scroll;
+ overflow-x: hidden;
+}
+.hiddenscroll {
+ overflow:scroll;
+	overflow-x:hidden;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+/*list styles*/
+.mt {
+ list-style: none;
+ margin-left: -20px;
+}
+
+/*links*/
+a { color: var(--algae); }
+a:hover { color:var(--noon); }

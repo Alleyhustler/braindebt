@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from sanji.neocities.org/roman by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:01:37 GMT -->
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>r/malelivingspace</title>
+ <link rel="stylesheet" href="dock.css" /> <!--DO NOT FORGET TO CHECK THIS LINK !!!-->
+	<link rel="stylesheet" href="hover.css"/> <!-- src https://ianlunn.github.io/Hover/ -->
+	
+ <link rel="shortcut icon" href="assets/pixels/bills.gif" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+ <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&amp;display=swap" rel="stylesheet">
+	<!-- font-family: "Pinyon Script", cursive; -->
+	
+<style>
+	body {
+		background-color: var(--night);
+		color: var(--day);
+		cursor: url('assets/graphics/fag.png'),auto;
+	}
+	
+	::selection {
+  background-color:#5b642c;
+  }
+	
+	#wrapper {
+		position: relative;
+		border: 1px solid rgba(255, 255, 255, 0);/*removing this breaks the site LOL*/
+		width: 800px;
+		height: 800px;
+		margin: 0px auto 0px auto;
+		background-image: url();
+		background-size: 790px;
+		background-position: 0px 23px;
+		background-repeat: no-repeat;
+	}
+	
+	/*navigation bar*/
+	#topnav {
+		position: fixed;
+		z-index: 999;
+	}
+	#menu {
+		width: 700px;
+		margin: 0px auto 0px auto;
+	}
+	.navitem {
+		text-align: right;
+		margin-right: 15px;
+	}
+	.navitem .first {
+		text-align: left;
+	}
+	.icon {
+		height: 15px;
+		padding-right: 5px;
+	}
+	/*title script*/
+	#title {
+		margin: 23px auto 0px auto;
+		padding: 0px 20px 0px 0px;
+		text-align: end;
+		font-size: 60px;
+		font-family: "Pinyon Script", cursive;
+		color: transparent;
+		background-image:  url(assets/graphics/DCgoldnugget.gif);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+	}
+	/*sparkly divider*/
+	.glitterdiv {
+		background-image: url(assets/graphics/DCgoldnugget.gif);
+		height: 1px;
+	}
+	
+	/*container for divs*/
+	#ashtray {
+		width: 550px;
+		height: 600px;
+		position: relative;
+	}
+	
+	/*landing page*/
+	#homepage {
+		height: 100%;
+	}
+	#fit {
+		position: absolute;
+		top: 184px;
+		box-shadow: 0px 0px 15px 15px var(--fog), inset 0px 0px 15px 5px var(--fog);
+		height: 230px;
+		padding: 10px;
+	}
+	#mood {
+		position: absolute;
+		top: 115px;
+		right: 35px;
+		height: 150px;
+		width: 120px; 
+		text-align: center;
+	}
+	#thinking {
+		right: -15px;
+		top: 80px;
+		z-index: -5;
+		filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+	}
+	#statuscafe {
+		filter: drop-shadow(0px 0px 3px black);
+	}
+	#statuscafe-username {
+		margin-bottom: 5px;
+	}
+	#greeting {
+		position: absolute;
+		top: 40px;
+		left: 30px;
+		width: 300px;
+		text-align: center;
+		font-size: 18px;
+		padding: 18px 10px 18px 10px;
+		box-shadow: 0px 0px 15px 5px var(--fog), inset 0px 0px 15px 5px var(--fog);
+	}
+	#return a {
+		position: absolute;
+		bottom: 70px;
+		left: 20px;
+		font-size: 25px;
+		color: transparent;
+		background-image:  url(assets/graphics/DCgoldnugget.gif);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+	}
+	#return a:hover {
+		font-style: italic;
+	}
+	
+	/*condensed info*/
+	#idcard {
+		height: 100%;
+		padding: 10px 0px 0px 0px;
+	}
+	.license {
+		background-image: url(assets/lmtoholo.png);
+		background-size: cover;
+		border: 1px solid var(--fog);
+		margin: 10px 5px 25px 5px;
+		padding: 0px 0px 0px 2px;
+		width: 500px;
+		box-shadow: 0px 0px 5px 5px var(--fog), inset 0px 0px 15px 5px var(--fog);
+	}
+	.license td:nth-of-type(1) {
+		background: linear-gradient(100deg,rgba(0, 0, 0, 0.36) 44%, rgba(255, 255, 255, 0) 71%);
+	}
+	.license td:nth-of-type(2)::before {
+		content: '...';
+	}
+	#palette td {
+		padding: 5px;
+		width: 50px;
+		border: 1px solid var(--fog);
+	}
+	
+	/*detailed info*/
+	#wallet {
+		height: 100%;
+	}
+	#facts {
+		list-style: none;
+		margin: 5px 25px 5px -25px;
+		width: 425px;
+	}
+	#facts li {
+		margin: 0px 0px 5px 0px;
+		background: linear-gradient(100deg,rgba(0, 0, 0, 0.36) 61%, rgba(255, 255, 255, 0) 85%);
+	}
+	.oktrue::before {
+		content: 'TRUTH /';
+	}
+	.fake::before {
+		content: 'LIE / ';
+	}
+	
+	/*phone gallery*/
+	#cell { 
+		
+	}
+	#iphone {
+		position: absolute;
+		left: 39px;
+		top: 51px;
+		width: 112px;
+		height: 197px;
+		padding: 2px 2px 2px 2px;
+		border-radius: 2px;
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+	}
+	#iphone img {
+		width: 100%;
+	}
+	#iphone:hover {
+		width: 250px;
+	}
+	#iphone img:hover {
+	}
+	#iphonesplash img {
+		width: 237px;
+		position: absolute; 
+		left: 15px;
+		top: 4px;
+		z-index: -1;
+		filter: drop-shadow(0px 0px 1px rgba(255, 255, 255, 0.5));
+	}
+	#audiojack {
+		position: absolute; 
+		right: 30px;
+		top: 50px;
+		border: 3px double var(--fog);
+		padding: 2px 5px 2px 5px;
+		height: 150px;
+		width: 300px;
+		text-align: center;
+	}
+	#audioconnector {
+		width: 120px;
+		border-bottom: 1px solid var(--fog);
+		transform: rotate(0.41turn);
+		position: absolute; 
+		left: 190px;
+		top: 238px;
+	}
+	
+	/*deco class for graphics*/
+	.deco {
+		position: absolute;
+	}
+	
+	/*money page*/
+	#wealth {
+		height: 100%;
+	}
+	#moneyrain {
+		position: absolute;
+		overflow: hidden;
+		height: 100%;
+		width: 100%;
+		z-index: 5;
+	}
+	#casino {
+		position: absolute;
+		z-index: 10;
+		top: 40px;
+		left: 45px;
+		background-color: #195535;
+		width: 400px;
+		height: 270px;
+		padding: 20px 10px 20px 10px;
+		color: #d0b647;
+		text-shadow: 0px 0px 1px #ffe200, 0px 0px 10px #ffec00;
+		text-align: center;
+
+	}
+	#aspire {
+		color: #ffc933;
+		text-shadow: 0px 0px 10px #ffe200, 0px 0px 2px #ffec00;
+		font-size: 32px;
+		justify-content: space-evenly;
+	}
+	#methods {
+		text-align: ;
+	}
+	#methods li {
+		margin: 25px 10px 0px -20px;
+		list-style: none;
+	}
+	#starstruck {
+		background-image: url(assets/graphics/i-1351.gif);
+		height: 125px;
+		width: 225px;
+		margin: 0px auto 0px auto;
+		border: 4px double #d0b647;
+	}
+	.gilded {
+		position: absolute;
+		border-image-slice: 86 80 80 86;
+  border-image-width: 12px;
+  border-image-outset: 10px;
+  border-image-repeat: round round;
+  border-image-source: url("assets/graphics/framee.png");
+  border-style: solid;
+	}
+	
+	/*right side image*/
+	#splash {
+		z-index: -1;
+		position: absolute;
+		right: -125px;
+		top: 70px;
+		width: 750px;
+	}
+	#splash img {
+		width: 100%;
+	}
+	
+	/*footer div*/
+	#footer {
+		position: relative;
+		height: 125px;
+	}
+	#footer span {
+		position: absolute;
+		bottom: 4px;
+		left: 75px;
+	}
+	/*scrolling mood gallery*/
+	#feed {
+		position: absolute;
+		right: 5px;
+		top: -30px;
+		height: 200px;
+		width: 135px;
+	}
+	#feed img {
+		width: 100%;
+	}
+	#feed:hover {
+		transform: scale(1.3)
+	}
+	
+	/*hidden scrollbar*/
+	.hiddenscroll:hover {
+		cursor: ns-resize;
+	}
+	
+	a {
+		color: #c7e5aa;
+	}
+	a:hover {
+		color: transparent;
+		background-image:  url(assets/graphics/DCglit114.gif);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+		filter: drop-shadow(0px 0px 4px white);
+		cur
+	}
+	
+	/*css snippets*/
+	/*src = https://obby.dog/test-CSS/toys1 */
+	/*Tabs Start*/
+
+.tabcontent {  
+   padding: 10px;
+   transition: 2s;
+}
+.tabcontent.on {
+    -webkit-animation: fadein 0.6s 1 linear alternate;
+    -moz-animation: fadein 0.6s 1 linear alternate;
+    -ms-animation: fadein 0.6s 1 linear alternate;
+    -o-animation: fadein 0.6s 1 linear alternate;
+    animation: fadein 0.6s 1 linear alternate;
+}
+@keyframes fadein {
+    0% { opacity: 0%; transform: translate(-7px); 
+      }
+    30% { opacity: 0%; transform: translate(-7px); 
+      }
+    100% { opacity: 100%; transform: translate(0px);
+      }
+}
+ /*Tabs End*/
+	
+	/*Falling image start*/
+@-webkit-keyframes img-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+	}
+}
+@-webkit-keyframes img-shake {
+	0%,
+	100% {
+	  -webkit-transform: translateX(0);
+	  transform: translateX(0)
+	}
+	50% {
+	  -webkit-transform: translateX(80px);
+	  transform: translateX(80px)
+	}
+}
+@keyframes img-fall {
+	0% {
+	top: -10%
+	}
+	100% {
+	top: 100%
+	}
+}
+@keyframes img-shake {
+	0%,
+	100% {
+	transform: translateX(0)
+	}
+	50% {
+	transform: translateX(80px)
+	}
+}
+ 
+.falling-img-container {
+  width: 500px;
+  height: 550px;
+}
+.fall {
+	position: absolute;
+	top: 0%;
+	z-index: 5;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-animation-name: img-fall, img-shake;
+	-webkit-animation-duration: 10s, 3s;
+	-webkit-animation-timing-function: linear, ease-in-out;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-play-state: running, running;
+	animation-name: img-fall, img-shake;
+	animation-duration: 10s, 3s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite, infinite;
+	animation-play-state: running, running;
+	z-index:0;
+}
+.fall:nth-of-type(0) {
+	left: 1%;
+	-webkit-animation-delay: 0s, 0s;
+	animation-delay: 0s, 0s
+}
+.fall:nth-of-type(1) {
+	/* left: 10%; */
+	-webkit-animation-delay: 1s, 1s;
+	animation-delay: 1s, 1s
+}
+.fall:nth-of-type(2) {
+	left: 20%;
+	-webkit-animation-delay: 6s, .5s;
+	animation-delay: 6s, .5s
+}
+.fall:nth-of-type(3) {
+	left: 30%;
+	-webkit-animation-delay: 4s, 2s;
+	animation-delay: 4s, 2s
+}	
+.fall:nth-of-type(4) {
+	left: 40%;
+	-webkit-animation-delay: 2s, 2s;
+	animation-delay: 2s, 2s
+}
+.fall:nth-of-type(5) {
+	left: 50%;
+	-webkit-animation-delay: 8s, 3s;
+	animation-delay: 8s, 3s
+}
+.fall:nth-of-type(6) {
+	left: 60%;
+	-webkit-animation-delay: 6s, 2s;
+	animation-delay: 6s, 2s
+}
+.fall:nth-of-type(7) {
+	left: 70%;
+	-webkit-animation-delay: 2.5s, 1s;
+	animation-delay: 2.5s, 1s
+}
+.fall:nth-of-type(8) {
+	left: 80%;
+	-webkit-animation-delay: 1s, 0s;
+	animation-delay: 1s, 0s
+}	
+.fall:nth-of-type(9) {
+	left: 90%;
+	-webkit-animation-delay: 3s, 1.5s;
+	animation-delay: 3s, 1.5s
+}
+.falle:nth-of-type(10) {
+	left: 25%;
+	-webkit-animation-delay: 2s, 0s;
+	animation-delay: 2s, 0s
+}
+.fall:nth-of-type(11) {
+	left: 65%;
+	-webkit-animation-delay: 4s, 2.5s;
+	animation-delay: 4s, 2.5s
+}
+	.fall:nth-of-type(12) {
+	left: 45%;
+	-webkit-animation-delay: 9s, 2.5s;
+	animation-delay: 4s, 2.5s
+}
+/*Falling image end*/
+
+ 
+ /*mobile scaling*/
+	@media only screen and (max-width: 620px) {
+  #musterlist { display: none; }
+ }
+	
+</style>
+ 
+</head>
+
+<body>
+	
+<section id="topnav">
+	<table id="menu">
+		<tr>
+			<td>inventory /</td>
+			<td class="navitem hvr-sink" id="defaultOpen"><img src="assets/pixels/cocktail_02.gif" class="icon"><a class="tablinks trigger link" onclick="openTab(event, 'homepage')">return voucher</a></td><!---->
+			<td class="navitem hvr-sink"><img src="assets/pixels/red%20exclamation%20mark%20.gif" class="icon"><a class="tablinks active trigger link" onclick="openTab(event, 'idcard')" id="defaultOpen">id card</a></td><!---->
+			<td class="navitem hvr-sink"><img src="assets/pixels/toy9.gif" class="icon"><a class="tablinks active trigger link" onclick="openTab(event, 'wallet')" id="defaultOpen">wallet</a></td><!---->
+			<td class="navitem hvr-sink"><img src="assets/pixels/phone4.gif" class="icon"><a class="tablinks active trigger link" onclick="openTab(event, 'cell')" id="defaultOpen">cellphone</a></td><!---->
+			<td class="navitem hvr-sink"><img src="assets/pixels/casino.gif" class="icon"><a class="tablinks active trigger link" onclick="openTab(event, 'wealth')" id="defaultOpen">lucky charm</a></td><!---->
+		</tr>
+	</table>
+</section><!--header nav-->
+
+	<!--content container-->
+<main id="wrapper">
+	<section id="title">Roman's Apartment</section> <!--title-->
+ <div class="glitterdiv"></div><!--divider-->
+	
+	<!--tabs-->
+	<section id="ashtray">
+		<!--tab switcher script. src= https://obby.dog/test-CSS/toys1 -->
+		<script src="../ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+  function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+  }
+
+  document.getElementById("defaultOpen").click();
+  </script>
+  <script type="text/javascript">
+        $('.trigger').click(function () { 
+  $('.tabcontent').addClass('on');
+  $('.tabcontent').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(event) {
+    $('.tabcontent').removeClass('on')
+  });
+  }); 
+</script><!--tab switch script-->
+		
+		<!--xiv fankit tooltips src= https://na.finalfantasyxiv.com/lodestone/special/fankit/tooltip/ -->
+		<script src="../lds-img.finalfantasyxiv.com/pc/global/js/eorzeadb/loader43a0.js?v3"></script><!--tooltips script-->
+  
+		<!--landing-->
+		<article id="homepage" class="tabcontent" style="display: block;">
+			<div id="greeting">welcome to roman's internet apartment. watch where you step while in this forsaken place...</div><!--greeting-->
+			<div id="fit" class="hiddenscroll">
+				<table>
+					<th></th>
+					<tr><td>WPN</td> <td><a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/item/8f2de619fc7/" class="eorzeadb_link">Asphodelos Bayonet</a></td></tr>
+					<tr><td>HEAD</td> <td><a href="https://eu.finalfantasyxiv.com/lodestone/playguide/db/item/861a1ed2fa2/" class="eorzeadb_link">The Emperor's New Hat</a></td></tr>
+					<tr><td>CHST</td> <td><a href="https://eu.finalfantasyxiv.com/lodestone/playguide/db/item/3c24386417e/" class="eorzeadb_link">Ornate Diadochos Jacket of Fending</a></td></tr>
+					<tr><td>PNTS</td> <td><a href="https://eu.finalfantasyxiv.com/lodestone/playguide/db/item/1523c58ef05/" class="eorzeadb_link">Indagator's Trousers of Crafting</a></td></tr>
+					<tr><td>GLVS</td> <td><a href="https://eu.finalfantasyxiv.com/lodestone/playguide/db/item/77825cc8d4c/" class="eorzeadb_link">Noir Leather Gloves</a></td></tr>
+					<tr><td>SHOE</td> <td><a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/item/26f52f543c6/" class="eorzeadb_link">Belt-leather Boots</a></td></tr>
+					<tr><td>EARS</td> <td><a href="https://eu.finalfantasyxiv.com/lodestone/playguide/db/item/d47a7843d9c/" class="eorzeadb_link">Lunar Envoy's Earring of Fending</a></td></tr>
+					<tr><td>NECK</td> <td><a href="https://eu.finalfantasyxiv.com/lodestone/playguide/db/item/db52b28a2b7/" class="eorzeadb_link">Crystarium Choker of Fending</a></td></tr>
+					<tr><td>WRST</td> <td><a href="https://eu.finalfantasyxiv.com/lodestone/playguide/db/item/a39b3dd4c75/" class="eorzeadb_link">Diadochos Wristband of Fending</a></td></tr>
+					<tr><td>RING</td> <td><a href="https://eu.finalfantasyxiv.com/lodestone/playguide/db/item/020dc33bdda/" class="eorzeadb_link">Valkyrie's Ring of Fending</a></td></tr>
+				</table>
+			</div><!--clothes-->
+			<div id="mood"><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="../status.cafe/current-statusf3c4.js?name=gunbreaker" defer></script></div><!--status-->
+			<img src="assets/graphics/thoughts%20transparent.png" class="deco" id="thinking">
+			<div id="return"><a href="index.html">go home?</a></div>
+		</article><!--landing-->
+		
+		<!--condensed info-->
+		<article id="idcard" class="tabcontent" style="display: none;">
+			<table class="license">
+				<tr><td>NAME</td><td>Roman Medeis</td></tr>
+				<tr><td>AGE</td><td>36 (lost count)</td></tr>
+				<tr><td>NATIONALITY</td><td>viera - veena</td></tr>
+				<tr><td>ADDRESS</td><td>mizzenmast inn, limsa lominsa</td></tr>
+				<tr><td>OCCUPATION</td><td>unemployed, does odd jobs, bodyguards</td></tr>
+				<tr><td>TALENT</td><td>running away</td></tr>
+			</table>
+			
+			<table class="license" style="margin-left: 40px;">
+				<tr><td>CHARM POINT</td><td>mole under his lip</td></tr>
+				<tr><td>LOVES</td><td>money, fine alcohol, cheap thrills</td></tr>
+				<tr><td>LIKES</td><td>tobacco, luxury goods, rumors, nighttime</td></tr>
+				<tr><td>DISLIKES</td><td>entitlement, sailing</td></tr>
+				<tr><td>HATES</td><td>boredom, clingy types</td></tr>
+			</table>
+			
+			<table class="license">
+				<tr><td>VICES</td><td>covetousness, alcoholism, gambling, laziness</td></tr>
+				<tr><td>VIRTUES</td><td>good listener</td></tr>
+				<tr><td>VALUES</td><td>personal freedom</td></tr>
+				<tr><td>DISDAINS</td><td>servitude</td></tr>
+				<tr><td>HEART'S DESIRE</td><td>???</td></tr>
+			</table>
+			
+			<table id="palette">
+				<tr><td style="background-color: #e7c7b3;">#e7c7b3</td> <td style="background-color: #482930;">#482930</td></tr>
+				<tr><td style="background-color: #5b642c;">#5b642c</td> <td style="background-color: #b3bf71;">#b3bf71</td></tr>
+				<tr><td style="background-color: #27273a">#27273a</td> <td style="background-color: #464664;">#464664</td></tr>
+				<tr></tr>
+				<tr><td style="background-color: #181722;">#181722</td> <td style="background-color: #262136">#262136</td></tr>
+			</table>
+			
+		</article>
+		
+		<!---->
+		<article id="wallet" class="tabcontent hiddenscroll" style="display: none;">
+			<p><i>Because I longed for eternal life, I went to bed with harlots and drank for nights on end. In the morning, to be sure, my mouth was filled with the bitter taste of the mortal state. But, for hours on end, I had soared in bliss... Day would come softly to throw light on this disaster and I would get up and stand motionless in a dawn of glory.</i></p>
+			<details><summary>ffxiv-specific background</summary>Roman grew up in the isolated mountains of the Skatay Range in a little village. His brother had filled his head with stories about the world beyond the range, so when Roman became strong enough he descended the mountain and made his way towards Dalmasca. This journey lead him to meet the early Restistance fighters in Bozja and they compelled him into joining their cause. But after the reality of his situation hit him, Roman realised he wanted to do something more with his life than fight in a losing war. He deserted one night and boarded a ship as a stowaway- only to be discovered by the sailors soon after. He begged for his passage and was forced to work for his way. Despite the circumstances surrounding it, his work as a ship's hand was pleasureable and Roman found himself drawn to the freedom of travelling the sea; for many years after his conscription had ended, he chose to keep working onboard. He sailed around the world for many years; but the long voyages were ill suited towards his hotblooded nature and the days blended together, becoming unidentifiable and indistinct. One day he went ashore and, feeling the toll the years had taken on him, swore to live an easygoing life. But the lax lifestyle ashore is very different from the lifestyle he had lived at sea; he quickly blew threw all his money indulging his expensive whims and couldn't sit still in a single place for long for all the trouble he brought. Nowadays he mostly lingers around Limsa Lominsa, watching the crowds on the lower decks or fishing off the docks. </details>
+			<p>Roman is a self serving and unsympathetic individual and is more often tolerated than liked. He is fairly self aware, but remains unbothered about the way that others see him, almost seeming offended by the notion he could be any other way. Even if he doesn't outwardly show it, he enjoys having company and is usually found in places where lots of people gather. His love for scandals keeps him in the know and he is a storyteller when it serves him.  </p>
+			<p>Because his spending priorities are all over the place he is often caught up in schemes to make quick cash. Roman is shameless and and does what he has to in order to see his business through. He is at his most extreme when he believes that he has nothing to lose. The thrill of trying to survive fufils him. Has horrible luck but loves to take chances anyways. </p>
+			<p>He is very self-assured and intuitive, giving a brief impression of trustfulness. His loyalty is ultimately to himself, but it does serve him to build rapport and trust with people he has respect for, even if it takes a bit of work. when he finds himself in over his head he has no problem relying on others for assistance. He is curious and interested in learning new information and secrets, leading him to travel. </p>
+			<ul id="facts">
+				<li class="oktrue"> he has travelled the world extensively, but  never paid much attention to the names of places he sailed to. some of the fantastical places he's claimed to have seen really do exist, but he would never be able to identify them on a map. his vague details make him seem like more of a liar than he is.</li>
+				<li class="fake"> casuses no issues at the gold saucer despite his strained history with management there. he doesn't win anything because he doesn't want to attract too much attention to himself there. </li>
+				<li class="oktrue"> he has a tattoo across his back he has no memory of getting. he hates the idea that everyone except for him can see the tattoo and always tries to keep it covered up.</li>
+				<li class="oktrue"> enjoys the smell of cologne and wears fine scents to attract women. unaware that his smoking habit mixes the smells together in an unpleasant way.</li>
+				<li class="oktrue"> won back his family ring after selling it to make ends meet. despite the fortune of this event he has believed the ring to be cursed ever since. </li>
+				<li class="fake"> forgetful when it comes to owing money</li>
+			</ul>
+		</article>
+		
+		<!---->
+		<article id="cell" class="tabcontent" style="display: none;">
+			<div id="iphone" class="hiddenscroll">
+				<a href="#"><img src="assets/art/comms/tobias%20small%20skeb.png"></a>
+				<a href="#"><img src="assets/art/comms/romantynkyrst.png"></a>
+				<a href="#"><img src="assets/art/comms/comm_boby.png"></a>
+				<img src="assets/art/2024artdump.png">
+				<img src="assets/art/joblessonjoblesshate.png">
+				<a href="https://playstation2.neocities.org/"><img src="assets/art/comms/bdaypresent2024.png"></a>
+			</div><!--photogallery-->
+			<div id="iphonesplash"><img src="assets/graphics/sharpphone2.png"></div>
+			<div id="audiojack" class="hiddenscroll">now playing....<br><br>
+				<audio controls src="https://file.garden/aIK7T2ngWhc8oB6b/ost/zaphyre shelter34.mp3"></audio> <a href="https://soundcloud.com/zaphyremusic/shelte-r34">zaphyre  - shelter 3.4 set</a><br><br>
+				<audio controls src="https://file.garden/aIK7T2ngWhc8oB6b/ost/dmmd re bg04.mp3"></audio>
+				<a href="#">dmmd re:connect bg 04</a><br><br>
+				<audio controls src="https://file.garden/aIK7T2ngWhc8oB6b/ost/djbePCT.mp3"></audio>
+				<a href="https://soundcloud.com/djbe916/pct">beskupehn_espira - pct</a><br><br>
+				<audio controls src="https://file.garden/aIK7T2ngWhc8oB6b/ost/hoosickmiya enchanted forest rave.mp3"></audio>
+				<a href="https://boringtechno1.bandcamp.com/album/boring-techno-4-ever">hoosick, miya lowe - enchanted forest rave</a><br><br>
+			</div>
+			<div id="audioconnector"></div>
+			 <img class="deco" style="right: -15px; top: 168px; filter: saturate(0.4);" src="assets/graphics/smoke.gif">
+		</article>
+		
+		<!---->
+		<article id="wealth" class="tabcontent" style="display: none;">
+			<div id="moneyrain" class="falling-img-container">
+  <!-- add your images below -->
+				<div class="fall"><img src="assets/pixels/10yen.gif"></div>
+				<div class="fall"><img src="assets/pixels/50yen.gif"></div>
+				<div class="fall"><img src="assets/pixels/100yen.gif"></div>
+				
+				<div class="fall"><img src="assets/pixels/10yen.gif"></div>
+				<div class="fall"><img src="assets/pixels/50yen.gif"></div>
+				<div class="fall"><img src="assets/pixels/10yen.gif"></div>
+				
+				<div class="fall"><img src="assets/pixels/10yen.gif"></div>
+				<div class="fall"><img src="assets/pixels/50yen.gif"></div>
+				<div class="fall"><img src="assets/pixels/100yen.gif"></div>
+				
+				<div class="fall"><img src="assets/pixels/10yen.gif"></div>
+				<div class="fall"><img src="assets/pixels/50yen.gif"></div>
+				<div class="fall"><img src="assets/pixels/10yen.gif"></div>
+				
+				<div class="fall"><img src="assets/pixels/10yen.gif"></div>
+				<div class="fall"><img src="assets/pixels/50yen.gif"></div>
+				<div class="fall"><img src="assets/pixels/100yen.gif"></div>
+			</div><!--end moneyrain-->
+			<div id="casino" class="hiddenscroll gilded">
+				<div id="aspire" class="row"><img src="assets/graphics/DOLAR.gif"> <span>MONEY<BR>METHODS</span> <img src="assets/graphics/DOLAR.gif"></div><br>
+				<div class="glitterdiv"></div>
+				<ul id="methods">
+					<li >spend like you're rich as proof you believe in your dream</li>
+					<li>the lottery is one of the most reliable methods providing a large payout with a small entry fee. exploit this system by buying a lot of tickets to win more.</li>
+					<li>don't be scared to lose your money in a bet because all it takes is one big payout to get all of it back</li>
+					<li>remember that everything good in your life is tied to money and it will make you appreciate money even more.</li>
+					<li>desperation is the state of being when the mind is free of all unnecessary thoughts and can make its best decisions</li>
+				</ul>
+				<div class="glitterdiv"></div>
+				<br>
+				<div id="starstruck"><br>your next hand is...<br><br><img src="assets/graphics/cards%2013.gif"><br></div>
+			</div>
+		</article>
+
+	</section><!---->
+	
+	<!--splash image-->
+	<div id="splash"><img src="assets/art/IMG_1942.png"></div><!--splash image-->
+	
+	<section id="footer">
+		<span>but i bend, because i continue to love myself</span>
+		<div id="feed" class="hiddenscroll">
+			<img src="assets/art/comms/commromantransparent.png">
+			<img src="assets/ocs/Tumblr_l_56453747328880.jpg">
+			<img src="assets/ocs/desire.jpg">
+			<img src="assets/ocs/Tumblr_l_1391755897007315.jpg">
+			<img src="assets/ocs/Tumblr_l_1391758938296324.jpg">
+			<img src="assets/ocs/Tumblr_l_1391760838972157.jpg">
+			<img src="assets/ocs/Screenshot_20231227_164600_Firefox.png">
+			<img src="assets/ocs/Tumblr_l_1391717668418892.jpg">
+			<img src="assets/ocs/Screenshot_20241116_121946_Firefox.png">
+			<img src="assets/ocs/Screenshot_20241214_082801_Firefox.jpg">
+			<img src="assets/ocs/Tumblr_l_1217806677818775.jpg">
+		</div>
+		<img src="assets/graphics/Cigarette.gif" class="deco" style="left: -10px; bottom: -20px;">
+	</section>
+	 <div class="glitterdiv"></div>
+</main>
+
+</body>
+
+
+<!-- Mirrored from sanji.neocities.org/roman by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:01:55 GMT -->
+</html>

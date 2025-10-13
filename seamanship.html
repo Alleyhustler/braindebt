@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!-- 
+
+   _||_
+    ||
+\\  ||  //  
+ |__||__|  anchors away!
+
+-->
+<html lang="en">
+
+<!-- Mirrored from sanji.neocities.org/seamanship by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:01:07 GMT -->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>wheelhouse</title>
+<link rel="shortcut icon" href="assets/pixels/anchodddr.gif" />
+
+<link rel="stylesheet" href="harbour.css" /> <!--DO NOT FORGET TO CHECK THIS LINK !!!-->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&amp;display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Belleza&amp;display=swap" rel="stylesheet"> <!-- font-family: "Belleza", sans-serif; -->
+ <link href="https://fonts.googleapis.com/css2?family=Koulen&amp;display=swap" rel="stylesheet"> <!-- font-family: "Koulen", sans-serif; -->
+ <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&amp;display=swap" rel="stylesheet"> <!-- font-family: "Kosugi Maru", sans-serif; -->
+ 
+<style>
+:root {
+ --night: #0b101f;
+ --day: aliceblue;
+ --noon: #120ac5;
+ --fog: rgba(255, 255, 255, 0.3);
+ --algae: #76c676;
+}
+ 
+body {
+ background-color: var(--night);
+ background-image: url();
+ background-size: contain;
+ color: var(--day); 
+ font-family: monospace;
+}
+ 
+ .wrapper {
+  width:800px;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+ }
+ 
+ .container { 
+  width:800px;
+  display: flex;
+  flex-direction: column;
+ }
+ 
+ .header {
+  width:796px;
+  height:200px;
+  border: 3px double var(--fog);
+  border-radius: 0px;
+  background-image: url(assets/nautinstbridge.png);
+  background-size: cover;
+  background-position-y: -25px;
+ }
+ 
+ .title {
+  color: transparent;
+  font-family: "Koulen", sans-serif;
+  font-size: 80px;
+  letter-spacing: 2px;
+  background-image: url(assets/OPOCEAN2.jpg);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  position:absolute;
+  filter: drop-shadow(1px 1px 0px white) drop-shadow(-1px -1px 1px var(--fog));
+  margin-top:-20px;
+  margin-left: 15px;
+ }
+ 
+ #navigation {
+  display:inline-block;
+  text-align: center;
+  width:900px;
+  margin: 0px 0px 10px -80px;
+ }
+ #navigation ul {
+  list-style-type: none;
+  font-size: 17px;
+ }
+ #navigation ul li {
+  display: inline;
+  margin-right: -5px;
+  padding: 6px;
+  border: 1px inset #004f0f;
+  border-radius: 5px;
+ }
+ #navigation ul li:nth-child(even) {
+  
+ }
+ #navigation ul li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+ }
+ #navigation a {
+  text-decoration: none;
+  color: ;
+ }
+ #navigation a:hover {
+  color: orangered;
+  letter-spacing: 0px;
+ }
+ #navigation img {
+  height: 20px;
+  margin: -5px -4px -2px -2px;
+  padding-right: 10px;
+ }
+
+.maincontent { 
+ height: calc(70vh - 50px);
+ padding: 10px;
+ margin: 0px auto 10px auto;
+ width: 700px;
+ border: 3px double var(--fog);
+ }
+ 
+ .updates { 
+  padding: 1px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 160px;
+  height: 125px;
+  font-size: 14px;
+  border: 1px double white;
+ }
+ .updates ul {
+  margin: 5px 2px 10px -30px;
+ }
+ .updates h3 {
+  text-align: center;
+  text-decoration: underline;
+ }
+ 
+.row {
+ display: flex;
+ flex-direction: row;
+ }
+ 
+.column {
+ display:flex;
+ flex-direction: column;
+ }
+
+/*overflow with hidden scrollbars*/
+.scroll {
+ overflow: scroll;
+ overflow-x: hidden;
+ -ms-overflow-style: none; /* Internet Explorer 10+ */
+ scrollbar-width: none; /* Firefox */
+ }
+ 
+ .format { display:none; }
+ 
+ .mobilehide { }
+    
+ 
+ /*navigation sidebar*/
+	#musterlist {
+		position: fixed;
+		z-index: 99;
+		text-align: right;
+		right: 0px;
+		top: 30%;
+		width: 125px;
+		margin-right: 20px;
+	}
+	#musterlist tr:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.2);
+ }
+	#musterlist tr {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+	#musterlist img {
+		height: 20px;
+		aspect-ratio: 1/1;
+		filter: drop-shadow(1px 1px 0px rgba(255, 255, 255, 0.5)) drop-shadow(-1px -1px 0px rgba(255, 255, 255, 0.5));
+		object-fit: cover;
+	}
+	
+		/*these effects are reversed on this page*/
+.hvr-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+  -webkit-transform: translateX(-8px);
+  transform: translateX(-8px);
+}
+	/*these effects are reversed on this page*/
+ 
+ @media only screen and (max-width: 620px) {
+  .wrapper { width: 95vw; }
+  .header { width: 90%; margin: 0px auto 0px auto; }
+  #navigation { width: 120%; margin: 0px 0px 0px -40px ; font-size: 12px; }
+  .maincontent { width: 90%; height: 1000px; }
+  #musterlist { display:none; }
+ }
+ 
+</style>
+</head>
+
+<body>
+<main class="wrapper">
+ 
+<div class="container">
+ 
+ <div class="header">
+  <span class="title">wheelhouse</span>
+ </div>
+ 
+ <div id="navigation">
+  <ul>
+   <li><img src="assets/pixels/wind2.gif"><a href="seamanship/harbourlanding.html" target="frame">Home</a></li>
+   <li><img src="assets/pixels/M6OEzgK.gif"><a href="seamanship/harbourfaq.html" target="frame">FAQ</a></li>
+   <li><img src="assets/pixels/telescope.gif"><a href="seamanship/harbourshipspotting.html" target="frame">Shipspotting</a></li>
+   <li><img src="assets/pixels/gray_grey%20computer%20.gif"><a href="seamanship/harbourfeatures.html" target="frame">Links</a></li>
+   <li><img src="assets/pixels/book13.gif"><a href="seamanship/harbourlibrary.html" target="frame">Library</a></li>
+   <li><img src="assets/pixels/watch3.gif"><a href="seamanship/harbourdiagrams.html" target="frame">Diagrams</a></li>
+   <li><img src="assets/pixels/datetime.gif"><a href="seamanship/harbournotes.html" target="frame">Notes</a></li>
+   <li><img src="assets/pixels/worldmap.gif"><a href="index.html">Mainpage</a></li>
+  </ul></div>
+ 
+ <div class="maincontent">
+  <iframe id="landing" title="landing" src="seamanship/harbourlanding.html" width="100%" height="100%" name="frame" style="border: none;"></iframe>
+ </div>
+ 
+</div><!-- container end-->
+</main><!-- end of main div-->
+ 
+ <div class="updates scroll mobilehide">
+   <h3>Changelog</h3>
+   <ul class="mt">
+    <li>2025/09/15: font and aesthetic changes</li>
+    <li>2025/08/06: layout size adjustmnents</li>
+    <li>2025/04/13: layout changes and old pages removed</li>
+    <li>2025/03/10: meterology 2 notes finished</li>
+    <li>2025/02/05: general ship knowledge 3 notes finished</li>
+    <li>2024/12/10: navigation safety notes finished</li>
+    <li>2024/11/21: communications notes finished</li>
+    <li>2024/11/03:notes split into individual pages</li>
+    <li>2024/10/17: small visual update and shipspotting page added. </li>
+    <li>2024/09/25: page has been totally remade.</li>
+   </ul>
+ </div>
+ 
+<!-- NAV SIDEBAR-->
+<nav id="musterlist">
+	<table>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/anchodddr.gif"></td>
+			<td><a href="index.html">harbour</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/filingcab.gif"></td>
+			<td><a href="office.html">office</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/worldmap.gif"></td>
+			<td><a href="sitemap.html">chartroom</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/fishing.gif"></td>
+			<td><a href="seamanship.html">wheelhouse</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/blue_green%20photo%20cards%20.gif"></td>
+			<td><a href="gallery.html">photos</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/an-book.gif"></td>
+			<td><a href="sketchbook.html">sketchbook</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/laptop4.gif"></td>
+			<td><a href="journal.html">blog</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/blue_green%20earth%20.gif"></td>
+			<td><a href="https://seamanship.atabook.org/">guestbook</a></td>
+		</tr>
+	</table>
+</nav>
+<!--nav sidebar-->
+ 
+</body>
+
+
+<!-- Mirrored from sanji.neocities.org/seamanship by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:01:11 GMT -->
+</html>

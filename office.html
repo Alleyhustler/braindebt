@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from sanji.neocities.org/office by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:00:57 GMT -->
+<head>
+	
+<title>harbourmaster's office</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="assets/pixels/filingcab.gif">
+
+ <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&amp;display=swap" rel="stylesheet">
+	<!-- font-family: "Nanum Gothic Coding", monospace; -->
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap" rel="stylesheet">
+  <!-- font-family: "Averia Libre", system-ui; -->
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&amp;display=swap" rel="stylesheet"> <!-- font-family: "Kosugi Maru", sans-serif; -->
+	
+  
+<style>
+body {
+  background-image: url(assets/lamentobg1.jpg);
+  background-color: #000000;
+  background-size: contain;
+  background-repeat: none;
+  color: white; 
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 15px;
+}
+	
+	#container {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+		height: 900px;
+		width: 800px;
+		margin: 30px auto 10px auto;
+	}
+	
+	#left {
+		width: 500px;
+	}
+	
+	#bio {
+		height: 500px;
+		border: 4px double white;
+	}
+	#bio > div {
+		margin: 5px 10px 0px 10px;
+	}
+	.info {
+		padding-bottom: 10px;
+		border-bottom: 1px solid white;
+	}
+	
+	.interests {
+		
+	}
+	.interests img {
+		height: 15px;
+	}
+	.interests ul {
+		margin: 5px 0px 10px -20px;
+	}
+	.interests ul li {
+		list-style-type: '-';
+		padding-left: 10px;
+		margin-left: 10px;
+	}
+	
+	.duo {
+		gap: 10px;
+	}
+	.duo > div {
+		min-height: 100px;
+		width: 48%;
+	}
+	
+	#card {
+		height: 245px;
+		width: 400px;
+		border: 1px solid white;
+		margin: 50px auto 10px auto;
+		gap: 12px;
+		position: relative;
+	}
+	#banners {
+		width: 200px;
+	}
+	#banners img {
+		width:100%;
+	}
+	#contact {
+		width: 175px;
+	}
+	
+	#right {
+		width: 300px;
+		position: relative;
+	}
+	
+	#gallery {
+		
+	}
+	#photoframe {
+		border: 4px double white;
+		margin: 20px auto 20px auto;
+		height: 220px;
+		width: 250px;
+		overflow:hidden;
+	}
+	#photoframe img {
+		width: 100%;
+	}
+	
+	#status {
+		margin: 30px 0px 10px 0px;
+		padding: 5px 10px 5px 10px;
+		border: 4px double white;
+		width: 250px;
+	}
+	
+	#touhou-ring {
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+	}
+	
+	#yaoi-ring {
+		position:absolute;
+		bottom: -33px;
+		right: -10px;
+		width: 200px;
+	}
+	
+	.column {
+		display: flex;
+		flex-direction: column;
+	}
+	.row {
+		display:flex;
+		flex-direction: row;
+	}
+	
+	/*title and subtitle*/
+	.subtitle {
+		font-size: 19px;
+		margin-bottom: 5px;
+		font-family: "Averia Libre", system-ui; 
+	}
+	
+	#title {
+		height: 50px;
+		border-bottom: 3px solid white;
+		font-family: "Averia Libre", system-ui;
+		font-size: 35px;
+		padding-left: 10px;
+	}
+	/*https://codepen.io/Founts/pen/AJyVOr*/
+	/* CSS talk bubble */
+.talk-bubble {
+	margin: 30px 40px 0px 0px;
+ display: inline-block;
+ position: absolute;
+	right:0px;
+	width: 225px;
+	height: auto;
+	background-color: white;
+	border-radius: 7px;
+}
+	.talk-bubble > div {
+		color:black;
+		margin: 20px 10px 20px 10px;
+	}
+	/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 30px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 transparent transparent #666;
+}
+.tri-right.btm-left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 38px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: white transparent transparent white;
+}
+	
+ /*overflow with hidden scrollbars*/
+ .scroll {
+  overflow:scroll;
+  overflow-x:hidden;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+ }
+	
+	/*properties affecting the details and summary tags*/
+  summary {
+    padding-bottom: 0.4em;
+  }
+  
+  details {
+    margin-top: 10px;
+  }
+    
+  details[open] {
+  }
+    
+  details[open] summary {
+    border-bottom: 1px dotted #aaa;
+    margin-bottom: 0.6em;
+  }
+	
+	/*links*/
+	a { 
+		color: coral;
+		text-shadow: 0 0 15px rgba(255, 190, 0, 0.75), 0 0 10px rgb(255, 0, 0);
+	}
+	
+	a:hover { 
+		color: darkslateblue; 
+		text-shadow: 0 0 15px rgba(178, 0, 255, 0.75), 0 0 10px rgb(79, 0, 255);
+		cursor: help; 
+	}
+	
+	/*lists*/
+	ul {
+		padding-left: 20px;
+		margin: 10px 10px 10px 10px;
+		list-style: square;
+	}
+
+	
+ /*tail graphic and hover*/
+	.konoetail {
+  display:float;
+  float:right;
+		margin:0px;
+		padding-right: 8px;
+  height: 38px;
+  width:20px;
+  background-image: url(assets/graphics/raitail.png);
+  background-size: contain;
+  background-repeat:none;
+	}
+ .konoetail:hover {
+  background-image: url(assets/graphics/raitailshock.png);
+	}
+	
+		/*navigation sidebar*/
+	#musterlist {
+		position: absolute;
+		z-index: 99;
+		left: 0px;
+		top: 30%;
+		width: 125px;
+	}
+	#musterlist tr:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.2);
+ }
+	#musterlist tr {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+	#musterlist img {
+		height: 20px;
+		aspect-ratio: 1/1;
+		filter: drop-shadow(1px 1px 0px rgba(255, 255, 255, 0.5)) drop-shadow(-1px -1px 0px rgba(255, 255, 255, 0.5));
+		object-fit: cover;
+	}
+	#musterlist a {
+	}
+	#musterlist a:hover {
+		font-style: italic;
+	}
+	
+	/* Forward hover effect */
+.hvr-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}
+	
+	@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+		#container {
+			margin: 10px auto 10px auto;
+			width: 520px;
+		}
+		#musterlist {
+			display:none;
+		}
+		.mobilehide {
+			display:none;
+		}
+		#right { display:none; }
+		#banners { display: none; }
+		#contact { 
+			margin: 10px;
+			width: 100%;
+		}
+    
+</style>
+</head>
+
+<body>
+<!-- NAV SIDEBAR-->
+<div id="musterlist">
+	<table>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/anchodddr.gif"></td>
+			<td><a href="index.html">harbour</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/filingcab.gif"></td>
+			<td><a href="office.html">office</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/worldmap.gif"></td>
+			<td><a href="sitemap.html">chartroom</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/fishing.gif"></td>
+			<td><a href="seamanship.html">wheelhouse</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/blue_green%20photo%20cards%20.gif"></td>
+			<td><a href="gallery.html">photos</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/an-book.gif"></td>
+			<td><a href="sketchbook.html">sketchbook</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/laptop4.gif"></td>
+			<td><a href="journal.html">blog</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/blue_green%20earth%20.gif"></td>
+			<td><a href="https://seamanship.atabook.org/">guestbook</a></td>
+		</tr>
+	</table>
+</div>
+<!--nav sidebar-->
+	
+<div id="container">
+	
+	<!-- touhou webring-->
+	<div id='touhou-ring' style="margin-left:auto;margin-right:auto;" class="mobilehide"><script type="text/javascript" src="../glassplanet.neocities.org/webring/touhou/onionring-variables.js"></script>
+<script type="text/javascript" src="../glassplanet.neocities.org/webring/touhou/widget/widget-td1.js"></script>
+	</div>
+	
+	<!-- left column -->
+	<div id="left" class="column">
+		<div id="bio" class="column scroll">
+			<div id="title">harbourmaster's office
+				<span class="konoetail" title="...stupid cat"></span>
+			</div>
+			<div class="subtitle">webmaster..</div>
+			<div class="info">I'm known as Toby or 'OBY' and I'm a 25 year old man from Canada. I am obsessed with  the marine industry  and  ships have always been a special interest of mine. I work full-time as a coastal mariner and I'm currently finishing up my qualifications to become a licensed <a href="https://en.wikipedia.org/wiki/Third_mate">ship's mate</a> <a href="https://en.wikipedia.org/wiki/Hawsepiper" title="through sea service"><i>'through the hawse pipe'</i></a> and my work keeps me pretty busy. Aside from ships, I have a wide variety of other interests and hobbies, which I hope to collect and share with others here on my site. </div>
+			<div class="subtitle">interests of mine..</div>
+			<div class="duo row info">
+				<div class="scroll interests">
+					<ul>SERIES
+					<li>FFXIV <a href="roman.html"><img src="assets/pixels/aetheryte.png" style="height:20px;"></a></li>
+					<li>Elden Ring</li>
+					<li>Dark Souls</li>
+					<li>Touhou</li>
+					<li>Arknights</li>
+     <li>Umamusume</li>
+					<li>Gintama</li>
+					<li>One Piece</li>
+				 </ul>
+				</div>
+				<div class="scroll interests">
+					<ul>HOBBY
+						<li>Puzzles/Card games <img src="assets/pixels/toy14.gif"></li>
+						<li>Mahjong</li>
+					 <li>Art and Drawing</li>
+					 <li>BL and Yaoi <a href="lamento.html"><img src="assets/pixels/oEYba29.gif" style="height: 15px;"></a></li>
+				 </ul>
+					<ul>MUSIC
+						<li>Electronic Music</li>
+						<li><a href="https://kaizoslumber.xyz/">Kaizo Slumber</a></li>
+      <li>Machine Girl</li>
+					</ul>
+				</div>
+			</div>
+			<!-- about the site -->
+			<div class="subtitle">about this site..</div>
+			<div class="info">This website is a personal project to bring together various parts of my life into one place and to function as a constantly-evolving 'digital diary' and place to express myself, functioning like a scrapbook. I work on this as I please and it's always changing with my whims. There is no particular theme to my site but I hope to convey my love for nature, commercial shipping, and gaming here. </div>
+		</div>
+		<!-- business card-->
+		<div id="card" class="row">
+			<!-- banners -->
+			<div id="banners" class="scroll">
+				<a href="https://lamento.nekoweb.org/"><img src="assets/graphics/lamentoban.jpg"></a>
+				<img src="assets/graphics/tncban.jpg">
+				<img src="assets/graphics/chirallive.jpg">
+				<img src="assets/graphics/hakadashitsuji.jpg">
+				<img src="assets/graphics/dreamcast.gif">
+				<img src="assets/graphics/katamari.gif">
+			</div><!--end of banners-->
+			<!-- contact dropdowns -->
+			<div class="scroll" id="contact">
+				<details><summary>social media</summary>
+				find me on <a href="https://x.com/seamanenjoyer">Twitter</a> and <a href="https://witchertwo.tumblr.com/">Tumblr</a>. </details>
+				<details><summary>contact</summary>
+		Outside of neocities I can best be reached over <a onclick="myFunction()" title="click to copy email to clipboard">email</a> <input type="text" value="greatbigsea446@gmail.com" id="myInput" hidden=""> or over social media. </details>
+				<details><summary>site specific</summary>
+			my neocities profile is <a href="https://neocities.org/site/sanji">here</a>. I have a guestbook <a href="https://seamanship.atabook.org/">here</a>. This page is intended for adult viewing. I only use firefox so if my site looks busted on another browser... oh well.</details>
+			</div>
+			
+			<!-- yaoi clique -->
+			<div id="yaoi-ring"><a href="https://meowbark2000.neocities.org/Cliques/FujoshiWeb"><img src="assets/graphics/yaoipaddle.gif" style="width:90%;"></a></div>
+		</div>
+	</div><!-- end of left -->
+	
+	<!-- right column -->
+	<div id="right">
+		<!-- photo -->
+		<div id="gallery" class="column">
+			<div id="photoframe">
+				<a href="https://www.nitrochiral.com/staffblog/2010/285.php"><img src="assets/naitouglasses.jpg"></a>
+			</div>
+		</div><!-- end of photo-->
+		
+		<!-- currently up to -->
+		<div id="status">
+				<div class="subtitle">currently...</div>
+				<ul class="">
+					<li style="list-style: url(assets/pixels/phone30.gif)">Playing: Dragon's Dogma</li>
+					<li style="list-style: url(assets/pixels/whitebook.gif)">Reading: Hyperion</li>
+					<li style="list-style: url(assets/pixels/J99GcgI.gif)">Listening to: <a href="https://soundcloud.com/horsegiirl/stutentreff">horsegiirL</a></li>
+					<li style="list-style: url(assets/pixels/laptop3.gif)"> Learning about: watercolors</li>
+					</ul>
+			</div><!-- end of status-->
+		
+		<!-- chat bubble -->
+	 <div class="talk-bubble tri-right  btm-left-in">
+  <div><marquee direction="left" onmouseover="this.stop();" onmouseout="this.start();" ><i>Even now, if I had the time... I would only have to let myself go. Everything else that would happen to me would be like rain on a stone. The stone cools off and that's fine. Another day, the sun bakes it. I've always thought that's exactly what happiness would be like.</i>
+			</marquee>
+		</div> </div>
+	</div><!-- end of right-->
+</div><!-- end of container-->
+</body>
+
+
+<!-- Mirrored from sanji.neocities.org/office by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:01:03 GMT -->
+</html>

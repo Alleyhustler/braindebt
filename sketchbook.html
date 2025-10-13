@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from sanji.neocities.org/sketchbook by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:01:26 GMT -->
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>sketchbook</title>
+ <link rel="stylesheet" href="dock.css" /> <!--DO NOT FORGET TO CHECK THIS LINK !!!-->
+ <link rel="shortcut icon" href="assets/pixels/badtzmaru%20worry%20black%20.png" />
+
+<style>
+ 
+ #wrapper {
+  width: 1000px;
+  margin: 0px auto 0px auto;
+ }
+ 
+ #header {
+  height:200px;
+  width: 400px;
+  border: 4px double var(--noon);
+  margin: 20px auto 40px auto;
+  padding: 10px;
+ }
+ #disclaimer {
+  border: 2px dashed;
+  color: crimson;
+  margin: 10px 0px 0px 0px;
+  padding: 5px 0px 5px 0px;
+ }
+ 
+ .divider {
+  border-bottom: 2px dashed var(--noon);
+  margin: 0px auto 20px auto;
+ }
+ 
+ .gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+ }
+ .gallery img {
+  height: 400px;
+  margin: 0px 0px 10px 0px;
+  padding: 16px 8px 16px 8px;
+  border: 4px double var(--noon);
+ }
+ .gallery img:hover {
+  border: 4px double var(--algae);
+ }
+ 
+ #ref {
+  border-top: 2px dashed var(--noon);
+  border-bottom: 2px dashed var(--noon);
+  margin: 10px auto 20px auto;
+  padding: 20px 0px 10px 0px;
+ }
+ 
+ #footer {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+ }
+ 
+ /*navigation sidebar*/
+	#musterlist {
+		position: fixed;
+		z-index: 99;
+		text-align: right;
+		right: 0px;
+		top: 30%;
+		width: 125px;
+		margin-right: 20px;
+	}
+	#musterlist tr:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.2);
+ }
+	#musterlist tr {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+	#musterlist img {
+		height: 20px;
+		aspect-ratio: 1/1;
+		filter: drop-shadow(1px 1px 0px rgba(255, 255, 255, 0.5)) drop-shadow(-1px -1px 0px rgba(255, 255, 255, 0.5));
+		object-fit: cover;
+	}
+	
+	/*right side hover effect*/
+.hvr-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+  -webkit-transform: translateX(-8px);
+  transform: translateX(-8px);
+}
+	/*right side hover*/
+ 
+ /*mobile scaling*/
+	@media only screen and (max-width: 620px) {
+	body { font-size: 14px; }
+  #musterlist { display: none; }
+  .gallery img { height: 300px; }
+  #wrapper { width: 95vw; }
+  #header { width: 95vw; }
+ }
+
+</style>
+ 
+</head>
+
+<body>
+
+<!-- NAV SIDEBAR-->
+<nav id="musterlist">
+	<table>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/anchodddr.gif"></td>
+			<td><a href="index.html">harbour</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/filingcab.gif"></td>
+			<td><a href="office.html">office</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/worldmap.gif"></td>
+			<td><a href="sitemap.html">chartroom</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/fishing.gif"></td>
+			<td><a href="seamanship.html">wheelhouse</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/blue_green%20photo%20cards%20.gif"></td>
+			<td><a href="gallery.html">photos</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/an-book.gif"></td>
+			<td><a href="sketchbook.html">sketchbook</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/laptop4.gif"></td>
+			<td><a href="journal.html">blog</a></td>
+		</tr>
+		<tr class="hvr-forward">
+			<td><img src="assets/pixels/blue_green%20earth%20.gif"></td>
+			<td><a href="https://seamanship.atabook.org/">guestbook</a></td>
+		</tr>
+	</table>
+</nav>
+<!--nav sidebar-->
+
+<main id="wrapper">
+ <section id="header" class="hiddenscroll">i don't draw as often as i'd like to because i'm busy with my life, but i want to get better... to get over my shyness and aversion towards sharing my art with others i created this page. i mostly just draw my ffxiv characters.
+ <div id="disclaimer"><img src="assets/pixels/red%2018%2b%20only%20.png" style="height: 30px; float:left; margin: 12px 10px 10px 10px;"> although there is nothing explicit on this page, this is an 18+ space because i create and display whatever art i want here. </div>
+ </section>
+ <div class="divider"></div>
+ <section class="gallery">
+   <img src="assets/art/IMG_1946.jpg">
+	 <img src="assets/art/stole%20my%20dust%20particle%20again.png">
+  <img src="assets/art/IMG_1942.png"><br>
+  <img src="assets/art/chesttouch.png">
+  <img src="assets/art/cheaterrrrrrr.png">
+  <img src="assets/art/vergilpoo.jpg">
+  <img src="assets/art/twopair.png" class="wide">
+  <img src="assets/art/thislastweek.png">
+  <img src="assets/art/vergilwkm.png">
+  <img src="assets/art/ediblehitsoidrawvergil.jpg">
+  <img src="assets/art/putthemawayslut.png">
+  <img src="assets/art/walktheplank.jpg">
+  <img src="assets/art/vergilromandoodles.jpg">
+  <img src="assets/art/vergilrainbow.jpg">
+  <img src="assets/art/pipeking.png">
+  <img src="assets/art/vergilgrass.jpg">
+  <img src="assets/art/pbvergil4ever.jpg">
+  <img src="assets/art/romanii.jpg">
+  <img src="assets/art/intjstare.jpg">
+  <img src="assets/art/MISSbebe.jpg">
+  <img src="assets/art/earlyvergilcomp.png">
+ </section>
+ <section id="ref" class="gallery">
+  <img src="assets/art/vergilref.png">
+  <img src="assets/art/romanref.png">
+ </section>
+ <section id="footer"><a href="index.html">go back?</a></section>
+</main>
+
+</body>
+
+
+<!-- Mirrored from sanji.neocities.org/sketchbook by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Oct 2025 19:01:31 GMT -->
+</html>
